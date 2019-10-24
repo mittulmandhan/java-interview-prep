@@ -1,7 +1,7 @@
 # Static and Non-static Calling
 
 
-![alt text](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/StaticNonstaticCalling/Static_vs_Nonstatic.png)
+![alt text](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/StaticNonStaticCalling/Static_vs_Nonstatic.png)
 
 
 ## Example 1:
