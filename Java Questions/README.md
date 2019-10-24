@@ -40,3 +40,48 @@
 |2.)| Does not follow 100% encapsulation i.e. states & behaviours can exist outside as well as inside class | Follows 100% encapsulation i.e. states & behavious can only exist within a class |
 |3.)| C++ uses primitive data types | Java says everything should be in a form of object/class |
 
+
+***4. Naming conventions in Java?***
+* In Java, while naming classes & interfaces follow camel case.For example: My, A, Car, etc.
+
+* In Java, variable & method name should be in camel case but first letter of first word must be in lowercase.For example: carEngine, driving, etc.
+
+
+***5. Why JRE appears again in JDK?***
+* JRE is an environment required to run a Java program.It consists of JVM and a bunch of libraries such as Development, UI Toolkits, Integration Libraries, lang & util libraries and other base libraries.
+
+* JDK is a Java development environment used for developing Java applications and applets. It includes JRE,an interpreter/loader(java), a compiler(javac), an archiver(jar), a document generator(javadoc), and other tools needed in Java application and applet development.
+
+
+***6. Why bin is called "bin"?***
+* bin is short for binary.It generally refers to the built applications(also known as binaries) that do something for a specific system.bin directory is located inside JDK.It cantains all the executables  and binary files werequire for Java development such as .exe, .dll(dynamic link libraries) and .ini(initialization) files.
+
+* bin folder consists of java compiler, interpreter, archiver,security manager, applet viewer, etc files.
+
+
+***7. What is advantage of 'path'?***
+* One can access different locations by using path variables.
+
+
+***8. Why .class is called bytecode?***
+In Java, .class files are created by compiler when a java program is compiled. class file is called bytecode because it contains Java bytecode i.e. highly optimized set of instructions,which is execcuted by JVM.class files contain symbols and each bytecode instructions is store in one byte exactly.
+
+
+***9. Compiler vs Interpreter***
+
+|   Compiler   |   Interpreter|
+|:---: | :---:|
+|1.) It takes an entire program ata time. |1.) It takes a line of code or instruction at a time. |
+|2.) Faster |2.) Comparatively Slower |
+|3.) Compilation is done before execution |3.) Compilation and execution takes place simultaneously |
+|4.) It checks syntax |4.) It assumes that syntax is correct |
+|5.) Easy Debugging |5.) Difficult to Debug |
+
+
+
+
+
+
+
+
+
