@@ -18,10 +18,10 @@ An object oriented programming language consists of these 6 features:
 
 
 
-- 1 Class: A class is like a blueprint for an object.
+1. Class: A class is like a blueprint for an object.
 A Class is a user-defined data-type which consists of states and behaviors.
 
-- 2 Object: Object represents any real world entity.
+2. Object: Object represents any real world entity.
 
 3. Inheritance: It is the mechanism in java which enables one class(Child Class) to reuse the features of another class(Parent Class).
 In java, a class inherits the features of another class using 'extends' keyword.
@@ -38,7 +38,7 @@ Data Abstraction is one of the key features of OOP language in which unnecessary
 informations are hidden from the user and only the required information visible to the user.
 
 
-6.)Polymorphism: Polymorphism means one name multi-behavior.
+6. Polymorphism: Polymorphism means one name multi-behavior.
 Poly means Multiple
 morphism means behaviour
 
