@@ -1,12 +1,13 @@
 # Scope Of A Variable
 
-----
 
 ### There are 3 levels of scope of a variable: ###
 
 - Class Level
 - Instance Level
 - Local Level
+
+----
 
 - ### Class Level: 
 Static variables have class level scope.
