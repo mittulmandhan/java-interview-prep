@@ -81,6 +81,24 @@
 |8.) Compiler is used at compile time. |8.) Interpreter is used at run time. |
 
 
+***10. Why JVM Search for main method ? What is its signature?***
+* Main method is the most important Java method.When you start learning Java programming, this is the first method you encounter.Main mtjod is the entry point for any Java program that's why JVM search for main method.
+
+* Signature of main method:
+
+````
+public static void main(String args[]){
+//code
+}
+````
+
+
+
+
+
+
+
+
 
 
 
