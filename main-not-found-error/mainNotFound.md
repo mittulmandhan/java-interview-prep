@@ -1,4 +1,4 @@
-#Main Not Found Error
+# Main Not Found Error
 
 If JVM does not find the main method in your class at runtime it throws a runtime exception.
 
