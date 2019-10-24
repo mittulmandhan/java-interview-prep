@@ -37,7 +37,8 @@ Data Abstraction is one of the key features of OOP language in which unnecessary
 informations are hidden from the user and only the required information visible to the user.
 
 
-6. Polymorphism: Polymorphism means one name multi-behavior.
+6. Polymorphism: Polymorphism means one name multi-behavior. 
+Polymorphism gives us ability to have multiple methods with same name but different behaviour. 
 - Poly means Multiple
 - morphism means behaviour
-polymorphism gives us ability to have multiple methods with same name but different behaviour. 
+
