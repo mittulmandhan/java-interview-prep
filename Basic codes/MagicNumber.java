@@ -1,4 +1,4 @@
-class MagicNumber {
+public class MagicNumber {
 	int x;
 	
 	MagicNumber(int num) {
