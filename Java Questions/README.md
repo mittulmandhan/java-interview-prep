@@ -18,7 +18,8 @@
   
   **vi. Polymorphism**
   
-  **i. Class:** A class is like a blueprint for an object. A Class is a user-defined data-type which consists of states and behaviors.
+  
+**i. Class:** A class is like a blueprint for an object. A Class is a user-defined data-type which consists of states and behaviors.
 
 **ii. Object:** Object represents any real world entity.
 
@@ -30,5 +31,9 @@
 
 **vi. Polymorphism:** Polymorphism means one name multi-behavior. Polymorphism gives us ability to have multiple methods with same name but different behaviour.
 
-Poly means Multiple
-morphism means behaviour
+
+***3. C++ vs Java***
+   **C++**    |   **Java**
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
