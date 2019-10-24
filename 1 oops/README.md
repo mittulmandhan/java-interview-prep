@@ -4,7 +4,6 @@ Java is an
 - open source, 
 - high level,
 - object oriented
-
 programming language.
 
 An object oriented programming language consists of these 6 features:
@@ -39,7 +38,6 @@ informations are hidden from the user and only the required information visible 
 
 
 6. Polymorphism: Polymorphism means one name multi-behavior.
-Poly means Multiple
-morphism means behaviour
-
+- Poly means Multiple
+- morphism means behaviour
 polymorphism gives us ability to have multiple methods with same name but different behaviour. 
