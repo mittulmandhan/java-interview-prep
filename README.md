@@ -2,7 +2,7 @@
 
 
  - [1 OOPS](https://github.com/mittulmandhan/java-interview-prep/tree/master/1%20oops)
- - [2 SCOPE](https://github.com/mittulmandhan/java-interview-prep/tree/master/2%20scope)
- - [v4 Lamda Expressions](https://github.com/pawanmandhan/1-Java8-LambdaExpressionandFunctionalInterface/tree/master/src/main/java/com/v4)
- - [v7 Return Value From Lambda Expression](https://github.com/pawanmandhan/1-Java8-LambdaExpressionandFunctionalInterface/tree/master/src/main/java/com/v7)
- - [v8 Iterate Collection Using ForEach](https://github.com/pawanmandhan/1-Java8-LambdaExpressionandFunctionalInterface/tree/master/src/main/java/com/v8)
+ - [2 Scope](https://github.com/mittulmandhan/java-interview-prep/tree/master/2%20scope)
+ - [3 Main-not-found-error](https://github.com/mittulmandhan/java-interview-prep/tree/master/3%20main-not-found-error)
+ - [4 Static and Non-static member Calling](https://github.com/mittulmandhan/java-interview-prep/tree/master/4%20static-nonstatic)
+ - [5 Verbose](https://github.com/mittulmandhan/java-interview-prep/tree/master/5%20verbose)
