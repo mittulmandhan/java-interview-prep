@@ -92,6 +92,7 @@ public static void main(String args[]){
 }
 ````
 
+
 ***11. Who loads the class in RAM?***
 * JVM loads the class in RAM.Once the bytecode converted into NMC(Native machine code) JVM loads the NMC in RAM.
 
@@ -106,11 +107,57 @@ javap -verbose A >> abcd.txt
 * This process is called ____________
 
 
-***What is JITC?Whats its use in Java?***
+***13. What is JITC?Whats its use in Java?***
+* JITC stands for Just In Time Compiler.JITC comes with JVM(inside execution engine).It works parallel to interpreter.
+
+* JITC stores the executable code of the bytecode so that we don't need to convert the same bytecode into NMC again & again and we can directly run the NMC stored against the given bytecode instruction.This in result gives faster execution of java program and reusability to save efforts.
+
+
+
+***14. JRE Architecture***
 
 
 
 
+***15. Why Java is slower than C?***
+* Simply because Java contains more processes than C.Jav uses compiler + interpreter whereas C uses only compiler.
+
+* When we compile a C program we get an executable that can be run directly.
+
+* But in Java, we get Bytecode after compilation and that we need to run using JRE which contains a lot of modules like class loader, bytecode verifier, interpreter, JITC, bytecode conversion, security manger, etc that makes a java program than a C program.
+
+
+***16. How Java works on diff. platforms? or How Java is platform independent?***
+* A programming language is said to be platform independent if and only if it can be run on all available operating systems with respect to its development and compilation.
+
+* Java is platform independet because the bytecode, i.e. generated after compilation, can be run on any platform(O.S.) that Java supports.When you install JDK, JVM for the respective O.S. is a software that reads & converts the bytecode into NMC.
+* It is like a translator between a Java program and machine.For all the platform, there is a particular JVM.
+
+* JVM is platform dependent which makes the Java platform independent.
+
+
+***17. Why initialization before use condition only applies to local variables?***
+* Initialization condition says that no local variable can be used before initialization.
+
+* Invalid program:
+
+````
+// local variable x is used before it is initialized 
+void fun() {
+  int x;
+  System.out.println(x);//error at compile time
+}
+````
+
+* Valid program:
+
+````
+// local variable x is used after it is initialized 
+void fun() {
+  int x=10;
+  System.out.println(x);//10
+}
+````
 
 
 
