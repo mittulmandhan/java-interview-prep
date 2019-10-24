@@ -34,7 +34,7 @@
 
 ***3. C++ vs Java***
 
-|   C++   |   Java|
-|:---: | :---:|
-|Content Cell  | Content Cell|
-|Content Cell  | Content Cell|
+|S. NO.|   C++   |   Java|
+|:---:|:---: | :---:|
+|1|Need compiler to execute the code  | Content Cell|
+|2|Content Cell  | Content Cell|
