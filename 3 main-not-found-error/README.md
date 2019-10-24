@@ -13,5 +13,5 @@ class MainNotFoundErrorDemo {
 }
 ````
 
-
+### Here's the output ###
 ![alt text](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/mainNotFound/1.png)
