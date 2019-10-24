@@ -159,8 +159,16 @@ void fun() {
 }
 ````
 
+* This happens because static variables are the initialized by static block and instance level variables are initialized by constructors but the variables having local level scope does not automatically get a default value from static block or constructor hence it does not have any value by default.So local variables are not usable until they get initialized.
 
 
+***18. Write the rules for public access modifiers?***
+
+**Rule 1:** When a file contains a public classs then file name should be equal to the public class name.
+
+**Rule 2:** There could be only one public class ina program.
+
+**Rule 3:** Main method should be in public class(best practice but not forced)
 
 
 
