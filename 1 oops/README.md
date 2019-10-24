@@ -1,20 +1,20 @@
 # OOPS
 
 Java is an 
-open source, 
-high level,
-object oriented
+- open source, 
+- high level,
+- object oriented
 
-programming language introduced by Sun Microsystems in May 1995 and Designed by James Gosling.
+programming language.
 
 An object oriented programming language consists of these 6 features:
 
-1.)Class
-2.)Object
-3.)Inheritance
-4.)Encapsulation
-5.)Abstraction
-6.)Polymorphism
+- 1.)Class
+- 2.)Object
+- 3.)Inheritance
+- 4.)Encapsulation
+- 5.)Abstraction
+- 6.)Polymorphism
 
 1.)Class: A class is like a blueprint for an object.
 A Class is a user-defined data-type which consists of states and behaviors.
