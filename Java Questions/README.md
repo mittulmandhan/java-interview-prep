@@ -92,6 +92,21 @@ public static void main(String args[]){
 }
 ````
 
+***11. Who loads the class in RAM?***
+* JVM loads the class in RAM.Once the bytecode converted into NMC(Native machine code) JVM loads the NMC in RAM.
+
+
+***12. Write the command to convert bytecode in enlish.What is this process called?
+* Command to convert the bytecode in english:
+
+````
+javap -verbose A >> abcd.txt
+````
+
+* This process is called ____________
+
+
+***What is JITC?Whats its use in Java?***
 
 
 
