@@ -1,7 +1,7 @@
-## Verbose Command
+# Verbose Command
 
 
-# Source code 
+## Source code 
 
 ````
 class VerboseDemo {
@@ -12,8 +12,6 @@ class VerboseDemo {
 }
 ````
 
-# command to compile : javac VerboseDemo.java
-
-# command to show verbose : javap -verbose VerboseDemo
-
-# command to save verbose in file : javap -verbose VerboseDemo >> abcd.txt
+- command to compile : javac VerboseDemo.java
+- command to show verbose : javap -verbose VerboseDemo
+- command to save verbose in file : javap -verbose VerboseDemo >> abcd.txt
