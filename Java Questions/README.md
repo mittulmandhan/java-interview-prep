@@ -73,10 +73,12 @@
 |:--- | :---|
 |1.) It takes an entire program ata time. |1.) It takes a line of code or instruction at a time. |
 |2.) Faster |2.) Comparatively Slower |
-|3.) Compilation is done before execution |3.) Compilation and execution takes place simultaneously |
-|4.) It checks syntax |4.) It assumes that syntax is correct |
+|3.) Compilation is done before execution. |3.) Compilation and execution takes place simultaneously. |
+|4.) It checks syntax. |4.) It assumes that syntax is correct. |
 |5.) Easy Debugging |5.) Difficult to Debug |
-
+|6.) C, C++, Java, Scala uses compiler. |6.) Java, Javascript,Python uses interpreter. |
+|7.) In Java, compiler creates an object file(.class file) after successful compilation. |7.) In Java, interpreter converts class bytecode line by line into machine instructions and executes them simultaneously. |
+|8.) Compiler is used at compile time. |8.) Interpreter is used at run time. |
 
 
 
