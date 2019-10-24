@@ -6,7 +6,7 @@ __1. What is Java?__
 __2. Explain object oriented programming concepts.__
 * A programming language is considered to be an object oriented programming language if it consists of these 6 features:
 
-  ** i. Class **
+  **i. Class**
   ** ii. Object **
   ** iii. Inheritance **
   ** iv. Encapsulation **
