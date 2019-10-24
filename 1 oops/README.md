@@ -16,7 +16,7 @@ An object oriented programming language consists of these 6 features:
 5. Abstraction
 6. Polymorphism
 
-
+definitions :
 
 1. Class: A class is like a blueprint for an object.
 A Class is a user-defined data-type which consists of states and behaviors.
