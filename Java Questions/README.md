@@ -18,3 +18,17 @@
   
   **vi. Polymorphism**
   
+  **i. Class:** A class is like a blueprint for an object. A Class is a user-defined data-type which consists of states and behaviors.
+
+**ii. Object:** Object represents any real world entity.
+
+**iii. Inheritance:** It is the mechanism in java which enables one class(Child Class) to reuse the features of another class(Parent Class). In java, a class inherits the features of another class using 'extends' keyword. It supports the reusability of code and saves a lot of efforts of developer.
+
+**iv. Encapsulation:** Encapsulation basically means Data Binding. It is defined as the wrapping up of data into a single unit. Encapsulation says every member i.e. states & behaviors must exist within a class.
+
+**v. Abstraction:** Abstraction basically means Data Hiding. Data Abstraction is one of the key features of OOP language in which unnecessary informations are hidden from the user and only the required information visible to the user.
+
+**vi. Polymorphism:** Polymorphism means one name multi-behavior. Polymorphism gives us ability to have multiple methods with same name but different behaviour.
+
+Poly means Multiple
+morphism means behaviour
