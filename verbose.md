@@ -1,12 +1,19 @@
 #Verbose Command
 
-Source Code
-![alt text](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/verbose/source_code.png)
 
+Source code 
 
-Result
-![alt text](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/verbose/1.png)
-![alt text](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/verbose/2.png)
-![alt text](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/verbose/3.png)
-![alt text](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/verbose/4.png)
-![alt text](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/verbose/5.png)
+'''
+class VerboseDemo {
+	
+	public static void main(String args[]) {
+		System.out.println("Hello World");
+	}
+}
+'''
+
+command to compile : javac VerboseDemo.java
+
+command to show verbose : javap -verbose VerboseDemo
+
+command to save verbose in file : javap -verbose VerboseDemo >> abcd.txt
