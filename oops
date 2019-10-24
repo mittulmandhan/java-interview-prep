@@ -1,4 +1,9 @@
-Java is an middle level object oriented programming language.
+Java is an 
+open source, 
+high level,
+object oriented
+
+programming language introduced by Sun Microsystems in May 1995 and Designed by James Gosling.
 
 An object oriented programming language consists of these 6 features:
 
@@ -9,41 +14,35 @@ An object oriented programming language consists of these 6 features:
 5.)Abstraction
 6.)Polymorphism
 
-1.)Class: A class is like a blueprint for an object.A Class is a user-defined data-type which consists of states and behaviors.We can use these members of a class by creating an instance of it i.e. an object.
+1.)Class: A class is like a blueprint for an object.
+A Class is a user-defined data-type which consists of states and behaviors.
+
+2.)Object: Object represents any real world entity.
+
+3.)Inheritance: It is the mechanism in java which enables one class(Child Class) to reuse the features of another class(Parent Class).
+In java, a class inherits the features of another class using 'extends' keyword.
+It supports the reusability of code and saves a lot of efforts of developer.
 
 
-2.)Object: Object is a basic unit of an object.It represents the real life entities.An object is the implementation of a class.An object consists of state, behavior and Identity.
-
-->State :- State refers to variables of an object.It represents properties of an object.
-->Behavior :- It refers to the methods of an object.
-->Identity :- It gives a unique name to anobject which enables one objectb to interact with other objects.
+4.)Encapsulation: Encapsulation basically means Data Binding.
+It is defined as the wrapping up of data into a single unit.
+Encapsulation says every member i.e. states & behaviors must exist within a class.
 
 
-3.)Inheritance: It is the mechanism in java which enables one class the features of another class.In java, a class inherits the features of another class using 'extends' keyword.It supports the reusability of code and saves a lot of efforts of developer.
+5.)Abstraction: Abstraction basically means Data Hiding.
+Data Abstraction is one of the key features of OOP language in which unnecessary 
+informations are hidden from the user and only the required information visible to the user.
 
 
-4.)Encapsulation: Encapsulation basically means Data Binding.It is defined as the wrapping up of data into a single unit.It prevents data from being accessed by the code outside this wrap/shield/capsule.In java, Encapsulation is achieved by access modifiers such as public, private, default, etc. 
-There are 4 access modifiers in Java:-
-->public
-->private
-->default
-->protected
-
-->public - The level of access of a public member is everywhere.It can be accessed within or outside class as well as package.
-
-->private - The access level of a private member is within the class only.Outside class it is not available at all.
-
-->protected - The prtected members of a class can only be accessed through child class or inside the class itself.If no child is created then we cant access protected members from outside class at all.
-
-->Default - The access level of a default member is only within the package.It cannot be accessed outside package at all.If u do not specify any access level,it will be the default.
-
-
-5.)Abstraction: Abstraction basically means Data Hiding.Data Abstraction is one of the key features of OOP language which allows us to display only the relevant details to the user or client and hide unnecessary details.In Java, we achieve abstraction by using interfaces and abstract classes.
-
-
-6.)Polymorphism: Polymorphism means differentiating between entities with the same name efficiently with the help of signature and declaration of these entities.
+6.)Polymorphism: Polymorphism means differentiating between entities with the same name efficiently
+ with the help of signature and declaration of these entities.
 There are 2 types of polymorphism in Java :-
 
-->Overloading - Overloading allows us to have number of methods having same name, but different signatures where number off arguments, type of arguments or both are different.It is also known as compile time polymorphism.It can take place within a class or among various classes.
+->Overloading - Overloading allows us to have number of methods having same name,
+ but different signatures where number off arguments, type of arguments or both are different.
+ It is also known as compile time polymorphism.It can take place within a class or among various classes.
 
-->Overriding - Method overriding is used to provide the specific implementation of a method in a class which is already provided by its superclass.It is also known as run time polymorphism.It can only take place in the case of inheritance i.e. no. of classes must be more than one.
+->Overriding - Method overriding is used to provide the specific implementation 
+of a method in a class which is already provided by its superclass.
+It is also known as run time polymorphism.It can only take place in the case of inheritance 
+i.e. no. of classes must be more than one.
