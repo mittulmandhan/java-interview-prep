@@ -1,10 +1,11 @@
 # Static and Non-static Calling
 
 
+## Rules for calling static and non-static members
 ![alt text](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/StaticNonStaticCalling/Static_vs_Nonstatic.png)
 
 
-## Example 1:
+### Example 1:
 ````
 class StaticNonstaticCalling1 {
 	static int x=10;
@@ -23,7 +24,7 @@ class StaticNonstaticCalling1 {
 };
 ````
 
-## Example 2:
+### Example 2:
 ````
 class StaticNonstaticCalling2 {
 	static int x=10;
