@@ -97,7 +97,7 @@ public static void main(String args[]){
 * JVM loads the class in RAM.Once the bytecode converted into NMC(Native machine code) JVM loads the NMC in RAM.
 
 
-***12. Write the command to convert bytecode in enlish.What is this process called?
+***12. Write the command to convert bytecode in enlish.What is this process called?***
 * Command to convert the bytecode in english:
 
 ````
@@ -116,6 +116,7 @@ javap -verbose A >> abcd.txt
 
 ***14. JRE Architecture***
 
+**Incomplete**
 
 
 
