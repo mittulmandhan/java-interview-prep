@@ -33,7 +33,7 @@
 
 
 ***3. C++ vs Java***
-   **C++**    |   **Java**
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+|   C++   |   Java|
+|:---: | :---:|
+|Content Cell  | Content Cell|
+|Content Cell  | Content Cell|
