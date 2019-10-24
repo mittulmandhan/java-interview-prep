@@ -64,13 +64,13 @@
 
 
 ***8. Why .class is called bytecode?***
-In Java, .class files are created by compiler when a java program is compiled. class file is called bytecode because it contains Java bytecode i.e. highly optimized set of instructions,which is execcuted by JVM.class files contain symbols and each bytecode instructions is store in one byte exactly.
+* In Java, .class files are created by compiler when a java program is compiled. class file is called bytecode because it contains Java bytecode i.e. highly optimized set of instructions,which is execcuted by JVM.class files contain symbols and each bytecode instructions is store in one byte exactly.
 
 
 ***9. Compiler vs Interpreter***
 
 |   Compiler   |   Interpreter|
-|:---: | :---:|
+|:--- | :---|
 |1.) It takes an entire program ata time. |1.) It takes a line of code or instruction at a time. |
 |2.) Faster |2.) Comparatively Slower |
 |3.) Compilation is done before execution |3.) Compilation and execution takes place simultaneously |
