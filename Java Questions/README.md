@@ -36,5 +36,7 @@
 
 |S. NO.|   C++   |   Java|
 |:---:|:---: | :---:|
-|1|Need compiler to execute the code  | Content Cell|
-|2|Content Cell  | Content Cell|
+|1| Need compiler to execute the code  | Need both compiler & Interpreter to execute te code |
+|2| Does not follow 100% encapsulation i.e. states & behaviours can exist outside as well as inside class | Follows 100% encapsulation i.e. states & behavious can only exist within a class |
+|3| C++ uses primitive data types | Java says everything should be in a form of object/class |
+
