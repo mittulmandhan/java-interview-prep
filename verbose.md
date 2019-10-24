@@ -1,0 +1,1 @@
+![alt text](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/verbose/1.png)
