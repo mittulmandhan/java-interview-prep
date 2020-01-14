@@ -1,7 +1,7 @@
 # Package Statement
 * 'package' is a keyword used in package statement in a java source file.
-* The package statement identifies the package that a Java program belongs to
-* If your program does not include a package statement, the program belongs to the default package.
+* The package statement identifies the package that a Java source file belongs to.
+* If your program does not include a package statement, the program belongs to the default package i.e. no package.
 * If you are writting a short java program you don't need package statement but if you plan to distribute your program its necessary to add package statement to each & every source file of your program.
 * package statement takes place at the very first line of the program.
 * There can be only one package statement in a java program.
