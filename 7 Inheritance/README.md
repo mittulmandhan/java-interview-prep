@@ -13,4 +13,5 @@
 * Java does not support multiple inheritance because it causes diamond problem.
 * The “diamond problem” is an ambiguity that can arise as a consequence of allowing multiple inheritance. It is a serious problem for languages (like C++) that allow for multiple inheritance of state. In Java, multiple inheritance is not allowed for classes.
 ![picture alt](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/Inheritance/diamond%20problem.png)
-* To support multiple inheritance you cna use interfaces in Java.
+* To support multiple inheritance you can use interfaces in Java.
+* Inheritance is the only way to access the protected members of a class outside package.
