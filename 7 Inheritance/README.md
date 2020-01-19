@@ -6,6 +6,7 @@
 * The class that inherits the other class is known as sub class(or a derived class, extended class, or child class).
 * Inheritance is implemented using 'extends' keyword.
 * 'extends' keyword allows child class to reuse the existing code of parent class i.e. sub class can its own data members and member fuctions in addition to the parent class' data members and member fuctions.
+* Every class extends Object class by default Object class belongs to java.lang package.
 * There are 3 types of inheritance:
   * Single Inheritance
   * Multi-level Inheritance
