@@ -22,7 +22,7 @@ class A {
         //object creation, constructor calling.
         A a=new A();//a=101
         System.out.println("x = "+a.x);// print 101.x
-        System.out.println("x = "+a.y);// print 101.y
+        System.out.println("y = "+a.y);// print 101.y
     }
 };
 ````
@@ -42,4 +42,5 @@ x          |y
 **output**
 ````
 x = 10
+y = 20
 ````
