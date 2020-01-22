@@ -26,9 +26,10 @@ class A {
 ````
 
 <details>
-     **object name:** a
-     **object type:** class A
-     **object address:** 101(lets say)
+    <summary>object details</summary>
+    <p>**object name:** a</p>
+    <p>**object type:** class A</p>
+    <p>**object address:** 101(lets say)</p>
 </details>
 
 x = ~~0~~ 10
