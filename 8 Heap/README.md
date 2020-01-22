@@ -12,7 +12,7 @@
 * Heap has a default size of 65mb.
 
 **code**
-`
+````
 class A {
     int x=10;// 101.x=10
     //default constructor call
@@ -23,16 +23,16 @@ class A {
         System.out.println("x = "+a.x);// print 101.x
     }
 };
-`
+````
 
 **object name:** a
 **object type:** class A
 **object address:** 101(lets say)
-|x        |
-|---------|
-|~~0~~ 10 |
+x        |.
+---------|-
+~~0~~ 10 |.
 
 **output**
-`
+````
 x = 10
-`
+````
