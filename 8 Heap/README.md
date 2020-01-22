@@ -15,12 +15,14 @@
 ````
 class A {
     int x=10;// 101.x=10
+    int y=20;// 101.y=20
     //default constructor call
     
     public static void main(string args[]) {
         //object creation, constructor calling.
         A a=new A();//a=101
         System.out.println("x = "+a.x);// print 101.x
+        System.out.println("x = "+a.y);// print 101.y
     }
 };
 ````
@@ -34,10 +36,10 @@ class A {
     x = ~~0~~ 10
 </details>
 
-<details>
-    <summary>instance variables</summary>
-    <p>x = <strike>0</strike> 10</p>
-</details>
+x          |y
+---------- |---------
+~~0~~ 10   |~~0~~ 20
+
 
 **output**
 ````
