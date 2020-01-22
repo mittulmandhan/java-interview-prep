@@ -27,9 +27,11 @@ class A {
 
 <details>
     <summary>object details</summary>
-    <p>**object name:** a</p>
-    <p>**object type:** class A</p>
-    <p>**object address:** 101(lets say)</p>
+    <p>object name: a</p>
+    <p>object type: class A</p>
+    <p>object address: 101(lets say)</p>
+    
+    <summary>instace variables</summary>
 </details>
 
 x = ~~0~~ 10
