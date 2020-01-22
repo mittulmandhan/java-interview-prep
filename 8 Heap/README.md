@@ -32,8 +32,6 @@ class A {
     <p>object name: a</p>
     <p>object type: class A</p>
     <p>object address: 101(lets say)</p>
-    
-    x = ~~0~~ 10
 </details>
 
 x          |y
