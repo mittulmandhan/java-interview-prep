@@ -28,9 +28,9 @@ class A {
 **object name:** a
 **object type:** class A
 **object address:** 101(lets say)
-x        |.
----------|-
-~~0~~ 10 |.
+x        | .
+---------| -
+~~0~~ 10 | .
 
 **output**
 ````
