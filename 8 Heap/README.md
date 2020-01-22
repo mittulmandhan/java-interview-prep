@@ -31,10 +31,8 @@ class A {
     <p>object type: class A</p>
     <p>object address: 101(lets say)</p>
     
-    <summary>instace variables</summary>
+    x = ~~0~~ 10
 </details>
-
-x = ~~0~~ 10
 
 **output**
 ````
