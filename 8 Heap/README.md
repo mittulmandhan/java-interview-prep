@@ -6,7 +6,9 @@
 * Heap is reclaimed by an automatic storage management system known as a garbage collector.
 * In Java, heap is used to create,store & manage objects and object contains instance variables of the class.
 * 'new' keyword is used to create an object in heap.
-* Reference to these objects can be stored ina reference variables.
+* Reference to these objects can be stored in a reference variables.
+* Reference variable can either store a reference of same type of object or null.
+* A reference has a default value null. So that if that you use a reference variable without initializing it with an object reference your program will show a run time exception (called null pointer exception) and your program will terminate.
 * Variables inside object(i.e. instance variables) are initialized using constructors.
 * JVM loads the object and assigns the default values to the instance variables and then the actual value is assigned.
 * Heap has a default size of 65mb.
