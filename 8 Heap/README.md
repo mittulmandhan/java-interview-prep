@@ -34,6 +34,11 @@ class A {
     x = ~~0~~ 10
 </details>
 
+<details>
+    <summary>instance variables</summary>
+    <p>x = <strike>0</strike> 10</p>
+</details>
+
 **output**
 ````
 x = 10
