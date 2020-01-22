@@ -23,6 +23,7 @@ class A {
         System.out.println("x = "+a.x);// print 101.x
     }
 };
+`
 
 **object name:** a
 **object type:** class A
@@ -31,8 +32,6 @@ class A {
 |---------|
 |~~0~~ 10 |
 
-
-`
 **output**
 `
 x = 10
