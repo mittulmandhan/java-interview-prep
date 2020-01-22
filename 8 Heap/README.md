@@ -1,6 +1,6 @@
 # Heap
 
-* Heap means a collection of objects placed unorderly/disorderly on top of each other(in general).
+* In general, Heap means a collection of objects placed unorderly/disorderly on top of each other.
 * Whenever Java virtual machine(JVM) start-up it occupies some memory space in RAM essential for program execution.This memory space consists of stack, heap, method area, program counter registers and native internal threads.
 ![picture alt](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/Heap/JVM%20Architecture.PNG)
 * Heap is reclaimed by an automatic storage management system known as a garbage collector.
