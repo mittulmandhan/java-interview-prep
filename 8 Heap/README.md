@@ -6,7 +6,9 @@
 * Heap is reclaimed by an automatic storage management system known as a garbage collector.
 * In Java, heap is used to create,store & manage objects and object contains instance variables of the class.
 * 'new' keyword is used to create an object in heap.
+* 'new' keyword only allocates memory for the object in heap(rest of the construction tasks are done by constructor).
 * Reference to these objects can be stored in a reference variables.
+* Everytime an object is created address is saved in hash table with a randomly generated Id.
 * default value of a reference variable is null.
 * Reference variable can either store a reference of same type of object or null.
 * If a reference variable is storing null and your program tries to use it then you will encounter a run time error called NullPointerException and your program will terminate.
