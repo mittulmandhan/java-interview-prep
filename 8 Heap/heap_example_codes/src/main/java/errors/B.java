@@ -2,13 +2,19 @@ package errors;
 
 // compile time error
 public class B {
-	int x=10;
+	eg obj;
 	
 	public static void main(String[] args) {
-		B b;
-		// here we are using reference variable b without initializing it
-		// so we will encounter a compilation error
-		// Error message: The local variable b may not have been initialized
-		System.out.println(b.x);
+		B b=new B();
+		
+		// Here, obj is an instance level reference variable
+		// So obj will be initialized with default value i.e. null
+		// so while using obj we will get a runtimeException
+		// error message: NullPointerException
+		System.out.println(b.obj.x);
 	}
+}
+
+class eg {
+	int x=10;
 }
