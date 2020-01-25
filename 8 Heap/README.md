@@ -5,8 +5,8 @@
 ![picture alt](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/Heap/JVM%20Architecture.PNG)
 * Heap is reclaimed by an automatic storage management system known as a garbage collector.
 * In Java, heap is used to create,store & manage objects and object contains instance variables of the class.
-* 'new' keyword is used to create an object in heap.
-* 'new' keyword only allocates memory for the object in heap(rest of the construction tasks are done by constructor).
+* 'new' keyword is used to create an object in heap at runtime and it requires a single, postfix argument to call the constructor.
+* 'new' keyword only allocates memory for the object in heap at runtime and invokes the given object constructor(rest of the construction tasks are done by constructor).
 * Reference to these objects can be stored in a reference variables.
 * Everytime an object is created address is saved in hash table with a randomly generated Id.
 * default value of a reference variable is null.
