@@ -4,6 +4,7 @@
 * Whenever Java virtual machine(JVM) start-up it occupies some memory space in RAM essential for program execution.This memory space consists of stack, heap, method area, program counter registers and native internal threads.
 ![picture alt](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/Heap/JVM%20Architecture.PNG)
 * Heap is reclaimed by an automatic storage management system known as a garbage collector.
+* Garbage Collection is a process which removes dead objects from Java Heap space and returns memory back to Heap in Java.
 * In Java, heap is used to create,store & manage objects and object contains instance variables of the class.
 * 'new' keyword is used to create an object in heap at runtime and it requires a single, postfix argument to call the constructor.
 * 'new' keyword only allocates memory for the object in heap at runtime and invokes the given object constructor(rest of the construction tasks are done by constructor).
@@ -50,3 +51,6 @@ x          |y
 x = 10
 y = 20
 ````
+
+* When an instance level reference variable is declared and initialized with an object reference the problem of stackoverflow and out of heap space error occurs whenever we try to make object of that class.
+* These errors are explained in code as well but we will learn them in depth when we will learn about exceptions in future.
