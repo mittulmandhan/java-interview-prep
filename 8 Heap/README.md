@@ -10,6 +10,8 @@
 * 'new' keyword only allocates memory for the object in heap at runtime and invokes the given object constructor(rest of the construction tasks are done by constructor).
 * Reference to these objects can be stored in a reference variables.
 * Everytime an object is created address is saved in hash table with a randomly generated Id.
+* An object is a memory space allocated for a particular instance of class.
+* Object is divided into two logical parts. One loads the instance variable of that class and the other stores the reference of the method table(exists in method area) of that class.
 * default value of a reference variable is null.
 * Reference variable can either store a reference of same type of object or null.
 * If a reference variable is storing null and your program tries to use it then you will encounter a run time error called NullPointerException and your program will terminate.
@@ -41,9 +43,22 @@ class A {
     <p>object address: 101(lets say)</p>
 </details>
 
-x          |y
----------- |---------
-~~0~~ 10   |~~0~~ 20
+<table>
+    <tr>
+        <th colspan="2">Part I</th>
+        <th>Part II</th>
+    </tr>
+    <tr>
+        <th>x</th>
+        <th>y</th>
+        <th>Method Table Reference</th>
+    </tr>
+    <tr>
+        <td><strike>0</strike> 10</td>
+        <<td><strike>0</strike> 20</td>
+        <th>*</th>
+    </tr>
+</table>
 
 
 **output**
