@@ -1,6 +1,13 @@
 # Method Area
 * Method Area is one of the memory areas JVM aquires in RAM when it get start-up.
-* Method area consists of various logically(not physically) distributed class blocks.
+* method area is logically a part of the heap which is not considered for garbage collection.
+* It could be of fixed size or vary. Its memory may not be contiguous. JVM implementation can give control to programmer over Method area creation, its sizing etc.
+* If method area memory is not sufficient to satisfy an allocation request then JVM throws OutOfMemoryError.
+* Method area consists of per-class structure such as:
+  1. run-time constant pool
+  2. class blocks
+  3. special methods used in class, instance and interface initialization
+* class blocks are logically distributed memory blocks for class level data.
 * Class blocks contain class level data such as static variables, method table and bytecode of their respective classes.
 * A class is loaded in method area by class loader, i.e. a component of JVM, in class blocks.
 * Object class gets loaded first of all in the method area.
@@ -214,3 +221,6 @@ __Method Table__
     </table>
   </p>
 </details>
+
+* If you override a method then only the bytecode reference of the method gets overwritten in the method table(other details remain same in the method
+table). Thus, when you call that method child class definition of the method is executed.
