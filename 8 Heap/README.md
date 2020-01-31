@@ -10,7 +10,7 @@
 * 'new' keyword only allocates memory for the object in heap at runtime and invokes the given object constructor(rest of the construction tasks are done by constructor).
 * Reference to these objects can be stored in a reference variables.
 * Everytime an object is created address is saved in hash table with a randomly generated Id.
-* An object is a memory space allocated for a particular instance of class.
+* An object is a memory space allocated in heap for a particular instance of class.
 * Object is divided into two logical parts. One loads the instance variable of that class and the other stores the reference of the method table(exists in method area) of that class.
 * default value of a reference variable is null.
 * Reference variable can either store a reference of same type of object or null.
