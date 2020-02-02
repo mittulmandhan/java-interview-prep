@@ -38,7 +38,7 @@
 ````
 1 class A {
 2 	void ab() {
-3 		static int x=10;
+3 		static int x=10;// illegal start of expression
 4 	}
 5  
 6 	public static void main(String[] args) {
