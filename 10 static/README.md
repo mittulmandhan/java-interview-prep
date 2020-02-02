@@ -1,6 +1,6 @@
 # Static Keyword
-* Static is a keyword in Java.
-* Static is a non-access modifier which is applicable for class members i.e.
+* 'static' is a keyword in Java.
+* 'static' is a non-access modifier which is applicable for class members i.e.
   1. blocks
   2. variables
   3. methods
