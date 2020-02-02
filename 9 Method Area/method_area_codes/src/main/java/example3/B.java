@@ -8,11 +8,14 @@ package example3;
 // JVM identifies A IS-A Object
 // JVM loads Object class in method area
 // method table created and Object's methods added
-// Object's static variables' memory allocation and initialization
+// Object's static variables' memory allocation and initialization(if any)
+// Object's static block executes(if any)
 // A's methods loaded in method table
-// A's static variables' memory allocation and initialization
-// B's methods added
-// B's static variables' memory allocation and initialization
+// A's static variables' memory allocation and initialization(if any)
+// A's static block executes(if any)
+// B's methods added in method table
+// B's static variables' memory allocation and initialization(if any)
+// B's static block executes(if any)
 // JVM searches for main method in method table
 // JVM access uses the bytecode reference of main method and execute its code
 public class B extends A {
