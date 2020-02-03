@@ -10,7 +10,6 @@
 * class blocks are logically distributed memory blocks for class level data.
 * Class blocks contain class level data such as static variables, method table and bytecode of their respective classes.
 * A class is loaded in method area by class loader, i.e. a component of JVM, in class blocks.
-* Object class gets loaded first of all in the method area.
 * There are 4 ways to load a class in method area:
   1. Run the class. 
     - For e.g.: `java A`
@@ -20,7 +19,7 @@
     - For e.g.: `A a;`
   4. Using forName() method of class Class. 
     - For e.g.: `Class cls=Class.forName("A");`
-* Method table is a table where details of methods associated to a class is stored.It has 3 column i.e. serial number, method name and reference to the bytecode of the method stored inside class block(used when we call the method).
+* Method table is a table where details of methods associated to a class is stored. Method table is nothing but an array of struct that stores method details.struct(having some name) has method details such as method name, return type, number of parameters, types of parameteres(in order), modifiers(string array) and reference to method's bytecode.
 * Method table has two parts one is used to store non-static method whereas the other one to store static methods.
 * Reference of the method table of a class is stored in the object(see heap notes to understand this).
 * __For e.g.:__ when we run the following class using `java A` command method jvm aquires method area and loads class bytecode in method area using class loader at runtime and creates a method table for that class and stores all the methods associated with it. We will assume reference of Method table is 105.
