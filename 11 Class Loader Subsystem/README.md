@@ -20,3 +20,5 @@ __Bootstrap or Primordial ClassLoader:__ This classloader is responsible for loa
 __Extention ClassLoader:__ This classloader is the child class of Primordial classloader and is responsible for loading the classes from the extension classpath `jdk\jre\lib\ext` or any other directory pointed by the system property `java.ext.dirs`.It is User defined ClassLoader written in Java language.
 
 __Application or System ClassLoader:__ This classloader is the child class of Extension classloader and is responsible for loading the classes from the system classpath.It internally uses the ‘CLASSPATH‘ environment variable and is also a user defined class loader written in Java language.
+<br>
+__Note:__ The ClassLoader Delegation Hierarchy Model always functions in the order Application ClassLoader->Extension ClassLoader->Bootstrap ClassLoader.
