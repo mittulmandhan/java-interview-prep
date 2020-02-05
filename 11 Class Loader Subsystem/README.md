@@ -79,9 +79,13 @@ __3. Resolution:__
 ## Initialization
 * This component performs the final phase of the class loading where all the static variables are assigned the original values and the static blocks are executed from the parent to the child class.
 * This process requires careful synchronization as JVM is multithreaded and some threads may try to initialize the same class or interface at the same time.
-
-
-
+<br><br>
+-----------------------------------------------------------------------------
+__STUDY RESOURCES:__
+* https://www.javacodegeeks.com/2018/04/jvm-architecture-jvm-class-loader-and-runtime-data-areas.html
+* https://codepumpkin.com/class-loader-subsystem-jvm-internals/#Loading
+* https://www.artima.com/insidejvm/ed2/jvm4.html
+* https://www.geeksforgeeks.org/classloader-in-java/
 
 
 
