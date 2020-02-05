@@ -6,6 +6,8 @@
   2. Linking
   3. Initialization
 * The flow of processes in class loader subsystem is from top to bottom or you can say parent class to child class.
+
+![picture alt](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/classloaders/classloader_subsystem.jpg)
   
 ## Loading
 * This component handles the loading of the .class files from the hardware system into the JVM memory and stores the binary data (such as fully qualified class-name, immediate parent class-name, information about methods, variables, constructors etc.) in the method areas.
@@ -16,6 +18,8 @@
   3. System ClassLoader
 * Java ClassLoaders use an algorithm called the <b>Delegation Hierarchy Algorithm</b> to load the classes.
 * Depending on the type of class and the path of class, the ClassLoader that loads that particular class is decided.
+
+![picture alt](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/classloaders/types_of_classloaders.jpg)
 
 __Bootstrap or Primordial ClassLoader:__ This classloader is responsible for loading the internal core java classes present in Bootstrap classpath `jdk/jre/lib/rt.jar` and other classes present in the `java.lang.*` package. A Bootstrap Classloader is a Machine code which kickstarts the operation when the JVM calls it. It is not a java class. Its job is to load the first pure Java ClassLoader. It is by-default available with every JVM and is written in native C/C++ languages.It is the root class loader.
 
