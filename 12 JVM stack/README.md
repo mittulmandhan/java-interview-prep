@@ -32,6 +32,21 @@
 * Way of storing boolean can vary from JVM to JVM. BUt most of the JVM gives 1 slot for boolean values in the local variables array.
 * The parameters are stored in the LVA first, in the same order they are declared, and then local variables will be stored in order.
 * On instance method invocation, 0th index of LVA is always used to pass the current object reference(i.e. on which the instance method is being invoked) variable `this`, in case of Java.But it does not happen with static methods.
+````
+class A {
+
+  public static int runClassMethod(int i, long l, float f, double d) {
+    Object o=new Object();
+    byte b;
+  }
+  
+  public int runInstanceMethod(char c, double d, short s) {
+    boolean b;
+  }
+}
+````
+
+
 
 ### 2. Operand Stack
 * JVM uses Operand Stack as a work space for rough work or we can say for storing intermediate calculation's result.
