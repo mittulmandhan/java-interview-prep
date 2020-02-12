@@ -11,6 +11,9 @@
 * If the computation in a thread requires a larger JVM stack than permitted size, JVM throws __StackOverflowError__.
 * If JVM stacks can be dynamically expanded, and expansion is attempted but insufficient memory can be made available, or if insufficient memory can be made available to create the initial JVM stackfor a new thread, JVM throws __OutOfMemoryError__.
 * Each entry in the JVM stack is called __Stack Frame__ or __Activation Record__.
+
+![picture alt](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/JVM%20Stack/JVM%20Stack.jpg)
+
 ## Stack Frame Structure
 * Frames may be heap allocated or allocated on a contiguous stack or some combination of both depending on the decision of JVM implementation designers.
 * Only one frame is active at any given point.This frame is reffered as the current frame or method.
@@ -20,6 +23,8 @@
   1. Local Variables Array(LVA)
   2. Operand Stack(also an array)
   3. Frame Data<br>
+  
+![picture alt](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/JVM%20Stack/Stack%20Frame%20Structure.jpg)
 
 ### 1. Local Variables Array
 * The local variables array is a zero-based array of words.
@@ -46,7 +51,7 @@ class A {
 }
 ````
 
-
+![picture alt](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/JVM%20Stack/Local%20Variabales%20Array.jpg)
 
 ### 2. Operand Stack
 * JVM uses Operand Stack as a work space for rough work or we can say for storing intermediate calculation's result.
@@ -60,6 +65,9 @@ iload_1    // push the int in local variable 1
 iadd       // pop two ints, add them, push result
 istore_2   // pop int, store into local variable 2
 ````
+
+![picture alt](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/JVM%20Stack/Operand%20Stack.jpg)
+
 * The operand stack is also used to prepare & pass parameters to the methods, and to receive method return values.
 
 ### 3. Frame Data
@@ -72,10 +80,3 @@ istore_2   // pop int, store into local variable 2
 * Aside from constant pool resolution, the frame data must assist the virtual machine in processing a normal or abrupt method completion.
 * Frame data also contain some kind of reference to the method's exception table, which the virtual machine uses to process any exceptions thrown during the course of execution of the method.
 * The stack frame may also include other information that is implementation dependent, such as data to support debugging.
-
-
-
-
-
-
-
