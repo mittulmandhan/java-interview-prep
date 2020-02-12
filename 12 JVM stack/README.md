@@ -80,3 +80,8 @@ istore_2   // pop int, store into local variable 2
 * Aside from constant pool resolution, the frame data must assist the virtual machine in processing a normal or abrupt method completion.
 * Frame data also contain some kind of reference to the method's exception table, which the virtual machine uses to process any exceptions thrown during the course of execution of the method.
 * The stack frame may also include other information that is implementation dependent, such as data to support debugging.
+
+__Resources:__
+* https://www.geeksforgeeks.org/java-virtual-machine-jvm-stack-area/
+* https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-2.html
+* https://www.artima.com/insidejvm/ed2/jvm8.html
