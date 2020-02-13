@@ -281,13 +281,17 @@ class A {
 * https://www.artima.com/insidejvm/ed2/jvm8.html
 
 ### Some extra questions
-__1. Can 'this' keyword be used, outside method but inside class, to access instance variable?__
-* NO.
-__2. Can instance method be called by class name?__
-* No. It will show a compile error messgae "Unresolved compilation problem: Cannot make a static reference to the non-static method my() from the type A".
-__3. Can we call a constructor from inside a method using this()?__
-* No. 'this()' can only be used within a constructor as a first statement.No method can use 'this()'. It will show a compilation error message "Unresolved compilation problem: Constructor call must be the first statement in a constructor".
-__4. can a static method have a variable having the same name as an instance/class level variable?__
-* Yes. But in that case static method can only access the local variable(by name) and the static variable(by class name). It cannot access access the instance variable using 'this' because static methods do not have 'this' current object reference.
-__5. Can a constructor have multiple this() statement?__
-* No. Having more than one this() statement in a constructor will shaow a compile time error message "Unresolved compilation problem: Constructor call must be the first statement in a constructor"
+__1. Can 'this' keyword be used, outside method but inside class, to access instance variable?__<br>
+ NO.
+<br>
+__2. Can instance method be called by class name?__<br>
+ No. It will show a compile error messgae "Unresolved compilation problem: Cannot make a static reference to the non-static method my() from the type A".
+<br>
+__3. Can we call a constructor from inside a method using this()?__<br>
+ No. 'this()' can only be used within a constructor as a first statement.No method can use 'this()'. It will show a compilation error message "Unresolved compilation problem: Constructor call must be the first statement in a constructor".
+<br>
+__4. can a static method have a variable having the same name as an instance/class level variable?__<br>
+ Yes. But in that case static method can only access the local variable(by name) and the static variable(by class name). It cannot access access the instance variable using 'this' because static methods do not have 'this' current object reference.
+<br>
+__5. Can a constructor have multiple this() statement?__<br>
+ No. Having more than one this() statement in a constructor will shaow a compile time error message "Unresolved compilation problem: Constructor call must be the first statement in a constructor"
