@@ -80,7 +80,7 @@ class A {
   }
   
   public static void main(String[] args) {
-    A obj=new A(10, 20);
+    A obj=new A();
     obj.display(100, 200);
   }
 }
@@ -162,7 +162,7 @@ output:
 0 0 10 20
 3 4 10 20
 ````
-* `this()` constructor call statement must be the first statement in the constructor or it will show a compile time error i.e. _____.
+* `this()` constructor call statement must be the first statement in the constructor or it will show a compile time error i.e. Unresolved compilation problem: Constructor call must be the first statement in a constructor.
 
 ### 4. Can be passed as an argument in the method call.
 * It is used to reuse an object in many methods.
@@ -278,3 +278,16 @@ class A {
 * https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html
 * https://www.geeksforgeeks.org/this-reference-in-java/
 * https://www.w3schools.com/java/ref_keyword_this.asp
+* https://www.artima.com/insidejvm/ed2/jvm8.html
+
+### Some extra questions
+__1. Can 'this' keyword be used, outside method but inside class, to access instance variable?__
+* NO.
+__2. Can instance method be called by class name?__
+* No. It will show a compile error messgae "Unresolved compilation problem: Cannot make a static reference to the non-static method my() from the type A".
+__3. Can we call a constructor from inside a method using this()?__
+* No. 'this()' can only be used within a constructor as a first statement.No method can use 'this()'. It will show a compilation error message "Unresolved compilation problem: Constructor call must be the first statement in a constructor".
+__4. can a static method have a variable having the same name as an instance/class level variable?__
+* Yes. But in that case static method can only access the local variable(by name) and the static variable(by class name). It cannot access access the instance variable using 'this' because static methods do not have 'this' current object reference.
+__5. Can a constructor have multiple this() statement?__
+* No. Having more than one this() statement in a constructor will shaow a compile time error message "Unresolved compilation problem: Constructor call must be the first statement in a constructor"
