@@ -5,7 +5,7 @@
 * `this` is a reference variable passed as a hidden argument in an instance method or constructor.
 * when method is instance level, 0th index of Local Variables Array(LVA) in Stack Frame is reserved for `this` final reference variable which is of type of current class and stores the reference of current object.
 * `this` cannot be used to call class level members.
-* `this` is final, thus value of `this` cannot be overwritten.
+* `this` is final, thus value of `this` cannot be overridden.
 * The most common use of `this` keyword is to prevent the confusion among the class/instance variables and parameters/local variables having same name because a class/instance variable is shadowed by a parameter/local variable of a method.Such scenario is known as shadow concept.
 ````
 class A {
@@ -32,7 +32,7 @@ output:
 x = 0
 y = 0
 ````
-In above program, name of instance variables and local variables of constructor are same. So, we will use this keyword to distinguish between instance variables and local variables.
+In above program, names of instance variables are same as local variables. Here instance level variable is shadowed by a local variables. So, we will use this keyword to distinguish between instance and local variables.
 ````
 class A {
   int x;
