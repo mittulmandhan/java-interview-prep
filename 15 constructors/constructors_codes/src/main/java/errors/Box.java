@@ -1,5 +1,9 @@
 package errors;
 
+// In this code Box(int dimensions) constructor is calling itself recursively
+// which will ultimately lead to stack overflow
+// so compiler shows an error at compile time to prevent uncertainity
+// error message: 'Recursive constructor invocation Box(int)'
 public class Box {
 	  int width, height, depth;
 	  
