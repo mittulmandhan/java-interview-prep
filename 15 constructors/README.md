@@ -221,7 +221,7 @@ output:
 * __Important points to be taken care of when doing constructor overloading:__
   - Constructor calling must be the first statement of constructor in Java.
   - If we have defined one or more explicit constructor then default constructor is not created by the compiler.
-  - Recursive constructor calling is not valid in Java since it will create a never ending cycle of recursive calls of the same constructor and superclass constructor will never be called. In such case, we will face a _______ error.
+  - Recursive constructor calling is not valid in Java since it will create a never ending cycle of recursive calls of the same constructor and superclass constructor will never be called. In such case, we will face an error at compile time with error message 'Recursive constructor invocation Box(int)'.
 ````
 public class Box {
   int width, height, depth;
