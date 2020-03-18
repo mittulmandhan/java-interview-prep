@@ -49,7 +49,7 @@
 
 ### Static blocks
 * If you need to do the computation or logic in order to initialize your static variables, you can declare a static block that gets executed exactly once.
-* static blocks are execuuted exactly once just after the initialization of static variables i.e. before program execution starts.
+* static blocks are executed exactly once just after the initialization of static variables i.e. while initialization(in class loader subsytem) process is going on.
 * It is automatically executed by JVM at run-time, you can not call it.
 * Static blocks can also call static methods.
 * Following is an example of a use case of static block:
