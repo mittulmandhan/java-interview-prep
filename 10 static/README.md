@@ -62,6 +62,7 @@
   - method table
   - static block
   - main method called
+* In case of inheritance, flow of execution of static blocks is top to bottom i.e. parent to child.
 * Following is an example of a use case of static block:
 ````
 class A {
