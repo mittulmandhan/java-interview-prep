@@ -49,6 +49,12 @@
 
 ### Static blocks
 * If you need to do the computation or logic in order to initialize your static variables, you can declare a static block that gets executed exactly once.
+* Syntax:
+````
+static {
+  // your code
+}
+````
 * It is declared inside class and outside methods.
 * A class can contain multiple static blocks.
 * There is always atleast one static block present in class, explicit or implicit.
@@ -63,6 +69,7 @@
   - static block
   - main method called
 * In case of inheritance, flow of execution of static blocks is top to bottom i.e. parent to child.
+* If you want more codes than given in folder then [click here](https://github.com/mittulmandhan/java-interview-prep/tree/master/16%20static%2C%20init%20%26%20local%20blocks/static_block_codes)
 * Following is an example of a use case of static block:
 ````
 class A {
