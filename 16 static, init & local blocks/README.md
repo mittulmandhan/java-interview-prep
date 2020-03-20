@@ -43,7 +43,7 @@ class A {
   int y=10;
 }
 ````
-* This is a forced rule in java and if you disobey this rule compiler will show an error message "".
+* This is a forced rule in java and if you disobey this rule compiler will show an error message "cannot reference a field before it is defined".
 * When an object is created, initializers are called in the same sequence they appear in the source code. This rule helps to ensure that no variable is refered or used before its proper initialization.
 * Although initializer can refer or use the variables which are textually declared before the variable being initialized.In that case, compiler will be Happy:)
 ````
