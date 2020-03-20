@@ -65,15 +65,46 @@ class A {
   }
 }
 ````
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+# Local Block
+* Syntax of local block is same as init block but it is different from init block in some aspects and similar in some as well.
+* It is inside method.
+* One method can contain one or more local blocks.
+* They are executed in the same sequence they are declared/defined.
+* compiler does not provide any block by default.
+* local blocks offer flexibility and security.
+````
+class A {
+  public static void main(String arsg[]) {
+    System.out.println("in main");
+    
+    {
+      System.out.println("in local block");
+    }
+    
+    System.out.println("End of main()");
+  }
+}
+````
+### local blocks can access class, instance and local level variables
+* Local block is used when multiple independent logics are to be performed in main method. So, we separate them by making local blocks. This arrangement, gives flexibility and security.
+````
+class A {
+  public static void main(String args[]) {
+    int x=10;
+    
+    // local block
+    {
+      int y=20;
+      System.out.println(x);
+      System.out.println(x);
+    }
+    
+    // can't access y as y is declaredinside local block
+    // so cannot be accessed outside local blocks
+    System.out.println(y);
+    
+    System.out.println("end of main");
+  }
+}
+````  
