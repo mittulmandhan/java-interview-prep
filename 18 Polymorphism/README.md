@@ -18,7 +18,7 @@ class A {
   void sum(long x, long y) {
     System.out.println(x+y);
   }
-  void sum(string x, string y) {
+  void sum(String x, String y) {
     System.out.println(x+y);
   }
 }
@@ -27,11 +27,14 @@ class A {
 * When overloading methods, one row is added in the method table for every new overloaded method just like any other method.
 * Two method having same name, return type, no. arguments and data types of arguments but different names are not valid because compiler works on datatypes and changing the name of parameters does not make any difference.
 ````
+// here two method have same set of arguments i.e same no. of arguments and same types of arguments
+// changing variable name does not matter since compiler works on data types not on variable names
+// hence this code will show compile time error
 class A {
-  void sum(int x. int y) {
+  void sum(int x, int y) {
     System.out.println(x+y);
   }
-  void sum(int y. int x) {
+  void sum(int y, int x) {
     System.out.println(x+y);
   }
   public static void main(String args[]) {
@@ -46,26 +49,26 @@ class A {
   public static void main(String args[]) {
     int a=10,b=20;
     // this statement will take a and b as strings and concatinate them
-    System.out.println("sum is "+a+b);
+    System.out.println("sum is "+a+b);// sum is 1020
     // this statement will take a and b as integers and add them
-    System.out.println(a+b+" is the sum");
+    System.out.println(a+b+" is the sum");// 30 is the sum
   }
 }
 ````
 * eg 1:
 ````
 class A {
-  void sum(int x. int y) {
+  void sum(int x, int y) {
     System.out.println(x+y);
   }
-  void sum(string x, string y) {
+  void sum(String x, String y) {
     System.out.println(x+y);
   }
   public static void main(String args[]) {
     A a = new A();
-    a.sum(10,5);
+    a.sum(10,5);// 15
     A b = new A();
-    b.sum("foo","bar");
+    b.sum("foo","bar");// foobar
   }
 }
 ````
@@ -75,7 +78,7 @@ class A {
 // otherwise this code will not compile
 // because compiler will resolve 10.0 & 20.0 as type double by default
 class A {
-  void sum(int x. int y) {
+  void sum(int x, int y) {
     System.out.println(x+y);
   }
   void sum(float x, float y) {
@@ -83,9 +86,9 @@ class A {
   }
   public static void main(String args[]) {
     A a = new A();
-    a.sum(10,5);
+    a.sum(10,5);// 15
     A b = new A();
-    b.sum(10.0f,20.0f);
+    b.sum(10.0f,20.0f);// 30.0
   }
 }
 ````
@@ -123,6 +126,9 @@ class B extends A {
 * In Overriding, overridden and overriding methods share same name, access modifiers as well as non-access modifiers, return type, no. of arguments and data types of arguments are same but the definition may be different.
 * Java Virtual Machine is responsible for resolving the method call in case of method overriding.
 ````
+// only the reference for ab() method in the method table will be overwritten at the run-time
+// that means the no additonal row will be added for the ab() method in class B only the reference will be updated from class A's ab() method to class B's ab() method
+
 class A {
   void ab() {
     System.out.println("A");
@@ -138,7 +144,42 @@ class B extends A {
   }
 }
 ````
+__Method Table__
+<details>
+  <summary>Non-static</summary>
+  <p>
+    <table>
+      <tr>
+        <th>S.No.</th>
+        <th>Name</th>
+        <th>Bytecode Reference</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>ab()</td>
+        <td>* (this reference will be overwritten by the child class' reference for method at run time)</td>
+      </tr>
+    </table>
+  </p>
+</details>
 
+<details>
+  <summary>Static</summary>
+  <p>
+    <table>
+      <tr>
+        <th>S.No.</th>
+        <th>Name</th>
+        <th>Bytecode Reference</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>main()</td>
+        <td>*</td>
+      </tr>
+    </table>
+  </p>
+</details>
 
 
 
