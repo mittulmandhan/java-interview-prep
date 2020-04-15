@@ -17,3 +17,6 @@
  - [15 constructors](https://github.com/mittulmandhan/java-interview-prep/tree/master/15%20constructors)
  - [16 static, init & local blocks](https://github.com/mittulmandhan/java-interview-prep/tree/master/16%20static%2C%20init%20%26%20local%20blocks)
  - [17 final keyword](https://github.com/mittulmandhan/java-interview-prep/tree/master/17%20final%20keyword)
+ - [18 Polymorphism](https://github.com/mittulmandhan/java-interview-prep/tree/master/18%20Polymorphism)
+ - [19 static import](https://github.com/mittulmandhan/java-interview-prep/tree/master/19%20static%20import)
+ - [20 wrapper class](https://github.com/mittulmandhan/java-interview-prep/tree/master/20%20wrapper%20class)
