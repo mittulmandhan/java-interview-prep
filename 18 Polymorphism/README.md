@@ -107,7 +107,7 @@ Here, `public void ab(int x)` is the signature of ab() method.
 ````
 class A {
   void ab() {
-    System.out.println("B");
+    System.out.println("A");
   }
 }
 
