@@ -181,10 +181,10 @@ void fun() {
 
 ***21. How println method is abstracted?***
 * we use `System.out.println();` statement to use println() method where
- - __System__ is a final class defined in java.lang package
- - __out__ is an instance of PrintStream type and a public static member field/variable of the System class
- - __println()__ method is a public member of PrintStream class and we call it using out i.e. object reference of type PrintStream<br>
-__Note: we can assume that System.out represents the Standard Output Stream.__
+  * __System__ is a final class defined in java.lang package
+  * __out__ is an instance of PrintStream type and a public static member field/variable of the System class
+  * __println()__ method is a public member of PrintStream class and we call it using out i.e. object reference of type PrintStream<br>
+* we can assume that System.out represents the Standard Output Stream
 
 
 
