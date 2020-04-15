@@ -1,6 +1,7 @@
 # Wrapper Class
 * A wrapper class is a class whose object wraps or contains a primitive data types.
 * When we create a wrapper class it contains a field/variable, we can store a premitive data types in this field. In other words, we can wrap a premitive data type in an object of wrapper class.
+* All the wrapper classes are Immutable(see [Immutable Notes](https://github.com/mittulmandhan/java-interview-prep/blob/master/22%20Immutable/README.md))
 
 ### Need for Wrapper Class
 1. To convert simple data types into objects i.e to give a data type a form of an object. Objects are needed if we want to modify the value of arguments passed into a method because primitive types are passed by value and you can modify them once passed as an argument.
