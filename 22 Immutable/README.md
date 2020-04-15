@@ -1,20 +1,20 @@
-# Immuutable Classes
+# Immutable Classes
 * Immutable class means that once an object is created its content can not be changed.
 * In Java, all the wrapper classes(such as Integer, Float, Character, etc) are immutable.
 * String class is also Immutable.
 * Immutable classes are needed when we wan to make a class whose fields/member variables once intialized can't be changed.
 
 ### Steps to make an Immutable class:
-__Step 1:__ Create a final class
-  (so that it cannot be inherited and resultantly overriding of the methods prevented)
-__Step 2:__ Data members must be declared as final
-  (so that we cannot change the value once initialized)
-__Step 3:__ A parameterized constructor
-  (which will be used to initialize the data members during object creation)
-__Step 4:__ Getter method for all the variables/data members in it
-  (To provide a systematic interface to fetch the data members)
-__Step 5:__ No setters
-  (obviously to prevent the changes in the values of data members)
+<br>__Step 1:__ Create a final class
+  <br>(so that it cannot be inherited and resultantly overriding of the methods prevented)
+<br><br>__Step 2:__ Data members must be declared as final
+  <br>(so that we cannot change the value once initialized)
+<br><br>__Step 3:__ A parameterized constructor
+  <br>(which will be used to initialize the data members during object creation)
+<br><br>__Step 4:__ Getter method for all the variables/data members in it
+  <br>(To provide a systematic interface to fetch the data members)
+<br><br>__Step 5:__ No setters
+  <br>(obviously to prevent any modification in the values of data members)
   
 * eg 1:
 ````
