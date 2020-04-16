@@ -20,3 +20,5 @@
  - [18 Polymorphism](https://github.com/mittulmandhan/java-interview-prep/tree/master/18%20Polymorphism)
  - [19 static import](https://github.com/mittulmandhan/java-interview-prep/tree/master/19%20static%20import)
  - [20 wrapper class](https://github.com/mittulmandhan/java-interview-prep/tree/master/20%20wrapper%20class)
+ - [21 singleton design pattern](https://github.com/mittulmandhan/java-interview-prep/tree/master/21%20singleton%20design%20pattern)
+ - [22 Immutable](https://github.com/mittulmandhan/java-interview-prep/tree/master/22%20Immutable)
