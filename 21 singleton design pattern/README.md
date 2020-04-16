@@ -10,26 +10,66 @@
   <br>__Step 4:__ Create a public static getter method for the singleton object reference variable
      <br>(this method can be called using class name and it makes the singleton object accessible for classes outside package as well)
   <br>__Note:__ If we do not declare this method static then the class will be useless as singleton object cannot be accessed whatsoever.
+  
+### Non singleton class example
+````
+public class Employee {
+	public static void main(String[] args) {
+		Employee e1 = new Employee();
+		Employee e2 = new Employee();
+
+		// e1 and e2 are two different objects
+		System.out.println(e1);
+		System.out.println(e2);
+	}
+}
+````
+__output:__
+````
+example3.Employee@15db9742
+example3.Employee@6d06d69c
+````
+
+### Singleton class example
+````
+public class Student {
+	// step 2
+	private static Student instance;
+
+	// step 3
+	static {
+		instance = new Student();
+	}
+
+	// step 1
+	private Student() {
+	}
+
+	// step 4
+	public static Student getStudent() {
+		return instance;
+	}
+}
+````
 
 ````
-class Student {
-  // step 2
-  private static Student s;
-  
-  // step 3
-  static {
-    s = new Student();
-  }
-  
-  // step 1
-  private Student() {
-  }
-  
-  // step 4
-  public static Student getStudent() {
-    return s;
-  }
+public class StudentClient {
+	public static void main(String[] args) {
+		Student s1 = Student.getStudent();
+		Student s2 = Student.getStudent();
+
+		// s1 and s2 are same object
+		System.out.println(s1);
+		System.out.println(s2);
+	}
 }
+````
+
+__output:__
+````
+example1.Student@15db9742
+example1.Student@15db9742
+
 ````
 
 __Resources:__
