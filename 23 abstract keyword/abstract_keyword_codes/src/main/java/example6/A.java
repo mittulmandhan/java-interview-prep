@@ -3,6 +3,12 @@
 
 package example6;
 
-public class A {
-	abstract void ab();
+public abstract class A {
+	// this line will give compiletime error
+	// because it overrides java.lang.Object.toString() method
+	// but signature is mismatching
+	// java.lang.Object.toString() has signature `public String toString();`
+	// so while overriding `public abstract String toString();` and 
+	// `abstract public String toString();` will be valid and code will compile
+	abstract String toString();
 }
