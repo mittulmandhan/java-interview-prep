@@ -280,6 +280,8 @@ abstract class B extends A {
 ````
 ````
 class C extends B {
+  // The @Override annotation indicates that the child class method is over-writing its base class method
+  //  It can improve the readability of the source code
   @override
   void ab() {
     System.out.println("ab()");
