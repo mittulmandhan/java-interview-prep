@@ -1,7 +1,7 @@
 # `abstract` Keyword
 * `abstract` is a keyword.
 * `abstract` is a non-access modifier i.e. it changes the behaviour of the resource.
-* classes and methods can be abstract.
+* Only classes and methods can be abstract.
 * `abstract` resources cannot be `final`.
 
 ## `abstract` Class
@@ -33,7 +33,54 @@ public class A {
 ````
 abstract class B { }
 ````
-* Abstract class contains contains cunstructors like normal classes.
+* Abstract class contains constructors like normal classes.
+````
+abstract class Vehicle  
+{  
+    String msg;  
+      
+    Vehicle(String msg) {  
+    this.msg=msg;  
+    }  
+      
+    void display() {  
+        System.out.println(msg);  
+    }  
+      
+}  
+class Honda extends Vehicle  
+{  
+  
+    Honda(String msg) {  
+        super(msg);  
+          
+    }  
+  
+}  
+  
+public class AbstractExample3 {  
+  
+    public static void main(String[] args) {  
+  
+    Honda obj=new Honda("Abstract class' constructor is invoked");  
+    obj.display();  
+      
+    }         
+} 
+````
+__output:__
+````
+Abstract class' constructor is invoked
+````
+* Inner classes can also be abstract.
+````
+class Vehicle  
+{  
+    abstract class Car {  
+        abstract void display();  
+    }
+}
+````
 * An abstract class can contain abstract methods as well as normal methods(or you can say non-abstract methods).
 * example:
 ````
@@ -113,6 +160,7 @@ No meaningless method names are created.
 <br>
 ## `abstract` Method
 * Abstract method doesn't have body.
+* Abstract methods cannot be final, static and private.
 * Abstract method can only be declared in abstract class.
 ````
 // this code will not compile
