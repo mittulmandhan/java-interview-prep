@@ -35,38 +35,36 @@ abstract class B { }
 ````
 * Abstract class contains constructors like normal classes.
 ````
-abstract class Vehicle  
-{  
-    String msg;  
-      
-    Vehicle(String msg) {  
-    this.msg=msg;  
-    }  
-      
-    void display() {  
-        System.out.println(msg);  
-    }  
-      
-}  
-class Honda extends Vehicle  
-{  
-  
-    Honda(String msg) {  
-        super(msg);  
-          
-    }  
-  
-}  
-  
-public class AbstractExample3 {  
-  
-    public static void main(String[] args) {  
-  
-    Honda obj=new Honda("Abstract class' constructor is invoked");  
-    obj.display();  
-      
-    }         
-} 
+abstract public class Vehicle {
+	String msg;
+
+	Vehicle(String msg) {
+		this.msg = msg;
+	}
+
+	void display() {
+		System.out.println(msg);
+	}
+
+}
+````
+````
+public class Maruti extends Vehicle {
+	Maruti(String msg) {
+		// abstract class vehicles constructor called
+		super(msg);
+	}
+}
+````
+````
+public class Test {
+	public static void main(String[] args) {
+
+		Maruti obj = new Maruti("Abstract class' constructor is invoked");
+		obj.display();
+
+	}
+}
 ````
 __output:__
 ````
@@ -84,19 +82,19 @@ class Vehicle
 * An abstract class can contain abstract methods as well as normal methods(or you can say non-abstract methods).
 * example:
 ````
-abstract class A {
-  void ab() {
-    System.out.println("ab()");
-  }
+public abstract class A {
+	void ab() {
+		System.out.println("ab()");
+	}
 }
 ````
 ````
 // members of an abstract class can be indirectly called through child class
 
-class B extends A {
-  public static void main(String[] args) {
-    new B().ab();
-  }
+public class B extends A {
+	public static void main(String[] args) {
+		new B().ab();
+	}
 }
 ````
 __output:__
@@ -157,6 +155,7 @@ void showPrice(<class_name> <object_name>) {
 }
 ````
 No meaningless method names are created.
+<br>Refer package example5 in the code.
 <br>
 ## `abstract` Method
 * Abstract method doesn't have body.
@@ -165,16 +164,16 @@ No meaningless method names are created.
 ````
 // this code will not compile
 // since abstract method ab() is declared in non-abstract class A
-class A {
-  abstract void ab();
+public class A {
+	abstract void ab();
 }
 ````
 ````
 // this code will successfully compile
-// since abstract method is declared in abstract class A
+// since abstract method is declared in abstract class B
 
-abstract class A {
-  abstract void ab();
+public abstract class B {
+	abstract void ab();
 }
 ````
 * Non-abstract child class is obliged to override and implement abstract methods of its abstract parent/ancestor classes.
@@ -207,8 +206,8 @@ abstract class B extends A {
 ### Examples
 * eg 1:
 ````
-abstract class A {
-  abstract void ab();
+public abstract class A {
+	abstract void ab();
 }
 ````
 ````
@@ -216,14 +215,14 @@ abstract class A {
 // so child B has to override all the abstract methods of abstract super class A
 // here B will give body or implementation of ab() method
 
-class B extends A {
-  void ab() {
-    System.out.println("ab()");
-  }
-  
-  public static void main(String[] args) {
-    new B().ab();
-  }
+public class B extends A {
+	void ab() {
+		System.out.println("ab()");
+	}
+
+	public static void main(String[] args) {
+		new B().ab();
+	}
 }
 ````
 __output:__
@@ -232,8 +231,8 @@ ab()
 ````
 * eg 2:
 ````
-abstract class A {
-  abstract void ab();
+public abstract class A {
+	abstract void ab();
 }
 ````
 ````
@@ -241,26 +240,30 @@ abstract class A {
 // so child B has to override all the abstract methods of abstract super class A
 // here B will give body or implementation of ab() method
 
-class B extends A {
-  void ab() {
-    System.out.println("ab()");
-  }
-  
-  public static void main(String[] args) {
-    // there is a parent to child relationship between A & B
-    // we cant create object of abstract class A
-    // but we can make a reference variable of abstract class A
-    // and store a reference of its child class B's object in it
-    A a = new B();
-    
-    // At compile time, compiler have set calling of ab() method of class A
-    // because compiler works on reference variables & here ab() is called using reference variable of type A
-    // But at runtime ab() method of class B will be called
-    // because object is of class B & jvm will search ab() in method method table of class B
-    // where ab() method's bytecode reference, which is pointing to ab() method in class A, is overwritten by class B's bytecode reference for ab() method
-    // so ultimately ab() method of class B will be called
-    a.ab();
-  }
+public class B extends A {
+	void ab() {
+		System.out.println("ab()");
+	}
+
+	public static void main(String[] args) {
+		// there is a parent to child relationship between A & B
+		// we cant create object of abstract class A
+		// but we can make a reference variable of abstract class A
+		// and store a reference of its child class B's object in it
+		A a = new B();
+
+		// At compile time, compiler have set calling of ab() method of class A
+		// because compiler works on reference variables & here ab() is called
+		// using reference variable of type A
+		// But at runtime ab() method of class B will be called
+		// because object is of class B & jvm will search ab() in method method
+		// table of class B
+		// where ab() method's bytecode reference, which is pointing to ab()
+		// method in class A, is overwritten by class B's bytecode reference for
+		// ab() method
+		// so ultimately ab() method of class B will be called
+		a.ab();
+	}
 }
 ````
 __output:__
@@ -269,38 +272,39 @@ ab()
 ````
 * eg 3:
 ````
-abstract class A {
-  abstract void ab();
+public abstract class A {
+	abstract void ab();
 }
 ````
 ````
-abstract class B extends A { 
-  abstract void my();
+public abstract class B extends A {
+	abstract void my();
 }
 ````
 ````
-class C extends B {
-  // The @Override annotation indicates that the child class method is over-writing its base class method
-  //  It can improve the readability of the source code
-  @override
-  void ab() {
-    System.out.println("ab()");
-  }
-  
-  @override
-  void my() {
-    System.out.println("my()");
-  }
-  
-  public static void main(String[] args) {
-    // a can only call ab() method
-    A a = new C();
-    a.ab();
-    // b can call both ab() & my()
-    B b = new C();
-    b.ab();
-    b.my();
-  }
+public class C extends B {
+	// The @Override annotation indicates that the child class method is
+	// over-writing its base class method
+	// It can improve the readability of the source code
+	@Override
+	void ab() {
+		System.out.println("ab()");
+	}
+
+	@Override
+	void my() {
+		System.out.println("my()");
+	}
+
+	public static void main(String[] args) {
+		// a can only call ab() method
+		A a = new C();
+		a.ab();
+		// b can call both ab() & my()
+		B b = new C();
+		b.ab();
+		b.my();
+	}
 }
 ````
 __output:__
@@ -312,39 +316,39 @@ my()
 
 * eg 4:
 ````
-abstract class A {
-  abstract void ab();
+public abstract class A {
+	abstract void ab();
 }
 ````
 ````
-abstract class B extends A { 
-  abstract void my();
+public abstract class B extends A {
+	abstract void my();
 }
 ````
 ````
 // when an abstract method extends another abstract class then chikd class have option
 // it can override no abstract method or some abstract methods or all the abstract methods
-abstract class C extends B {
-  @override
-  void ab() {
-    System.out.println("ab()");
-  }
+public abstract class C extends B {
+	@Override
+	void ab() {
+		System.out.println("ab()");
+	}
 }
 ````
 ````
 // Note:  child class D can also re-override the methods which are overriden in its super class
 
-class D extends C {
-  @override
-  void my() {
-    System.out.println("my()");
-  }
-  
-  public static void main(String[] args) {
-    A a = new D();
-    a.ab();
-    a.my();
-  }
+public class D extends C {
+	@Override
+	void my() {
+		System.out.println("my()");
+	}
+
+	public static void main(String[] args) {
+		A a = new D();
+		a.ab();
+		a.my();
+	}
 }
 ````
 __output:__
@@ -354,21 +358,22 @@ my()
 ````
 * eg 5:
 ````
-abstract class A {
-  abstract void ab();
+public abstract class A {
+	abstract void ab();
 }
 ````
 ````
 // class B have overridden ab() of class A
-// Now, only one ab() method is present in the method table of class B i.e. class B's ab() method
-abstract class B extends A {
-  abstract void ab();
+// Now(at run-time), only one ab() method will be present in the method table of class B i.e. class B's ab() method
+
+public abstract class B extends A {
+	abstract void ab();
 }
 ````
 * eg 6(samjh ni aya):
 ````
-abstract class A {
-  abstract void ab();
+public abstract class A {
+	abstract void ab();
 }
 ````
 ````
@@ -380,12 +385,12 @@ abstract class B extends A {
 * eg 7:
 ````
 public abstract class A {
-  public abstract String toString();
+	public abstract String toString();
 }
 ````
 ````
-abstract class B extends A{
-  public abstract String toString(int x);
+public abstract class B extends A {
+	public abstract String toString(int x);
 }
 ````
 ````
@@ -394,36 +399,36 @@ abstract class B extends A{
 // Not overridden(REPLACING in method table)
 // So, C will have 2 abstract methods to override
 
-class C extends B {
-  @override
-  public String toString(int x) {
-    return null;
-  }
-  
-  @override
-  public String toString() {
-    return null;
-  }
+public class C extends B {
+	@Override
+	public String toString(int x) {
+		return null;
+	}
+
+	@Override
+	public String toString() {
+		return null;
+	}
 }
 ````
 * eg 8:
 ````
-abstract class A {
-  abstract void ab();
-  {// this is an init block
-    System.out.println("in ab");
-  }
+public abstract class A {
+	abstract void ab();
+	{// this is an init block
+		System.out.println("in ab");
+	}
 }
 ````
 ````
-class B extends A {
-  void ab() {
-    System.out.println("B");
-  }
-  
-  public static void main(String[] args) {
-    new B().ab();
-  }
+public class B extends A {
+	void ab() {
+		System.out.println("B");
+	}
+
+	public static void main(String[] args) {
+		new B().ab();
+	}
 }
 ````
 __output:__
