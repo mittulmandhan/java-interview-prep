@@ -2,11 +2,11 @@ package example1;
 
 public class Student {
 	// step 2
-	private static Student s;
+	private static Student instance;
 
 	// step 3
 	static {
-		s = new Student();
+		instance = new Student();
 	}
 
 	// step 1
@@ -14,7 +14,7 @@ public class Student {
 	}
 
 	// step 4
-	static Student getStudent() {
-		return s;
+	public static Student getStudent() {
+		return instance;
 	}
 }
