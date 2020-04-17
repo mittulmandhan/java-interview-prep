@@ -372,7 +372,7 @@ public abstract class B extends A {
 	abstract void ab();
 }
 ````
-* eg 6(samjh ni aya):
+* eg 6:
 ````
 // child class can make a normal method abstract
 // but it should have the same signature
