@@ -327,7 +327,8 @@ public abstract class B extends A {
 ````
 ````
 // when an abstract method extends another abstract class then chikd class have option
-// it can override no abstract method or some abstract methods or all the abstract methods
+// that it can override zero to many methods
+// Here, class C has overridden only 1 abstract method i.e. ab()
 public abstract class C extends B {
 	@Override
 	void ab() {
@@ -336,7 +337,8 @@ public abstract class C extends B {
 }
 ````
 ````
-// Note:  child class D can also re-override the methods which are overriden in its super class
+// Note: child class D can also re-override the methods which are overriden in its super class
+// Now that class C has overridden ab() method class D needs to override my() method only
 
 public class D extends C {
 	@Override
@@ -372,14 +374,20 @@ public abstract class B extends A {
 ````
 * eg 6(samjh ni aya):
 ````
+// child class can make a normal method abstract
+// but it should have the same signature
+
 public abstract class A {
-	abstract void ab();
+	// this line will give compiletime error
+	// because it overrides java.lang.Object.toString() method
+	// but signature is mismatching
+	// java.lang.Object.toString() has signature `public String toString();`
+	// so while overriding `public abstract String toString();` and `abstract public String toString();` will be valid and code will compile
+	abstract String toString();
 }
 ````
 ````
-// code will give compile time error
 abstract class B extends A {
-  abstract void ab();
 }
 ````
 * eg 7:
