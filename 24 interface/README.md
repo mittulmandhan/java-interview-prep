@@ -381,3 +381,8 @@ class C implements A,B {
 
 }
 ````
+
+__Resources:__
+* https://www.javatpoint.com/interface-in-java
+* https://www.geeksforgeeks.org/virtual-base-class-in-c/
+* https://stackoverflow.com/questions/2430756/why-are-interface-variables-static-and-final-by-default
