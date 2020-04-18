@@ -32,9 +32,12 @@ interface A {
 ````
 ````
 class B {
-  public static void main(String[] args) {
-    A a=null;
-  }
+	public static void main(String[] args) {
+		// compiler will not give error here
+		// because we are not instantiating interface A
+		// we are just creating a reference variable of type A
+		A a = null;
+	}
 }
 ````
 * By default interface is abstract i.e. it is considered as pure abstract.
@@ -51,7 +54,6 @@ interface A {
 * Interface can contain variables.
 ````
 interface A {
-  public abstract void ab();
   // following line will be changed to
   // public static final int x=10;
   // It is done by compiler
@@ -97,7 +99,6 @@ class D extends C {
 * A class can extend another class and at the same time it can implement one or more interfaces as well.
 ````
 interface A {
-  void ab();
 }
 ````
 ````
@@ -111,7 +112,7 @@ class B /*extends Object*/ imlements A {
   Object obj = new B();
 }
 ````
-* An interface can can extend one or more interfaces.
+* An interface can extend one or more interfaces.
 ````
 interface B {
   void my();
@@ -160,8 +161,8 @@ __output:__
 10
 10
 ````
-> __Why variables in interface are static and final?__<br>
-> Interface variables are static because Java interfaces cannot be instantiated in their own right; the value of the variable must be assigned in a static context in which no instance exists. The final modifier ensures the value assigned to the interface variable is a true constant that cannot be re-assigned by program code.
+> __Why variables in interface are static and final?__<br>Interface variables are static because Java interfaces cannot be instantiated in their own right; the value of the variable must be assigned in a static context in which no instance exists. The final modifier ensures the value assigned to the interface variable is a true constant that cannot be re-assigned by program code.
+
 
 ## Examples
 * Example 1:
@@ -172,22 +173,22 @@ interface A {
 ````
 ````
 class B implements A {
-  public void ab() {
-    System.out.println("in ab()");
-  }
-  
-  public static void main(String[] args) {
-    // this line will give compile time error
-    // because we are trying to instantiated 
-    // A a=new A();
-    
-    // this line will compile
-    // because we are instantiating class B's object
-    // and storing the object reference in a 
-    // reference variable of type interface A
-    A obj = new B();
-    a.ab();
-  }
+	public void ab() {
+		System.out.println("in ab()");
+	}
+
+	public static void main(String[] args) {
+		// this line will give compile time error
+		// because we are trying to instantiated interface A
+		// A a=new A();
+
+		// this line will compile
+		// because we are instantiating class B's object
+		// and storing the object reference in a
+		// reference variable of type interface A
+		A obj = new B();
+		obj.ab();
+	}
 }
 ````
 __output:__
@@ -237,31 +238,31 @@ interface B {
 }
 ````
 ````
-// Here, class C is implementing 2 interfaces which is an example multiple inheritance
-// And class C is abstract too
-// so it can hold abstract methods too
-// Now, we have override ab() method but not my() method
-// So now child class D is obliged to override my() method unless it is abstract
-abstract class C implements A,B {
-  public void ab() {
-    System.out.println("in ab()");
-  }
+//Here, class C is implementing 2 interfaces which is an example multiple inheritance
+//And class C is abstract too
+//so it can hold abstract methods too
+//Now, we have override ab() method but not my() method
+//So now child class D is obliged to override my() method unless class D is abstract
+abstract class C implements A, B {
+	public void ab() {
+		System.out.println("in ab()");
+	}
 }
 ````
 ````
-// class D is not abstract
-// so we need to override remaining abstract method
-// i.e. my() method
+//class D is not abstract
+//so we need to override remaining abstract method only
+//i.e. my() method
 class D extends C {
-  public void my() {
-    System.out.println("in my()");
-  }
-  
-  public static void main(String[] args) {
-    D d = new D();
-    d.ab();
-    d.my();
-  }
+	public void my() {
+		System.out.println("in my()");
+	}
+
+	public static void main(String[] args) {
+		D d = new D();
+		d.ab();
+		d.my();
+	}
 }
 ````
 __output:__
@@ -306,17 +307,19 @@ interface A {
 }
 ````
 ````
-// There is one toString() method in interface A
-// and one toString() method in Object class
-class B /*extends Object*/ implements A {
-  public String toString() {
-    return "Hello";
-  }
-  
-  public static void main(String[] args) {
-    B b = new B();
-    System.out.println(b.toString());
-  }
+//There is one toString() method in interface A
+//and one toString() method in Object class
+//interface A's toString() method overrides the Object class' toString() method
+//and interface A's toString() method is overridden by class B's toString() method
+class B /* extends Object */ implements A {
+	public String toString() {
+		return "Hello";
+	}
+
+	public static void main(String[] args) {
+		B b = new B();
+		System.out.println(b.toString());
+	}
 }
 ````
 __output:__
@@ -324,10 +327,6 @@ __output:__
 Hello
 ````
 * Example 6:
-````
-abstract class 
-````
-* Example 7:
 ````
 interface A {
   int x=10;
@@ -349,7 +348,7 @@ class C implements A,B {
   }
 }
 ````
-* Example 8:
+* Example 7:
 ````
 // Since there is no static block & we have not initialized x in declaration
 // 
@@ -357,4 +356,28 @@ interface A {
   int x;
 }
 ````
+* Example 8:
+````
+interface A {
+	void ab();
+}
+````
+````
+interface B {
+	int ab();
+}
+````
+````
+// interface A has ab() method with return type void
+// whereas interface B has ab() method with return type int
+// this conflict will give compile error
+// it can be resolved if we change the return type of ab() in either A or B
 
+class C implements A,B {
+
+	public void ab() {
+		
+	}
+
+}
+````
