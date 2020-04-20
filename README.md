@@ -22,3 +22,7 @@
  - [20 wrapper class](https://github.com/mittulmandhan/java-interview-prep/tree/master/20%20wrapper%20class)
  - [21 singleton design pattern](https://github.com/mittulmandhan/java-interview-prep/tree/master/21%20singleton%20design%20pattern)
  - [22 Immutable](https://github.com/mittulmandhan/java-interview-prep/tree/master/22%20Immutable)
+ - [23 abstract keyword](https://github.com/mittulmandhan/java-interview-prep/tree/master/23%20abstract%20keyword)
+ - [24 interface](https://github.com/mittulmandhan/java-interview-prep/tree/master/24%20interface)
+ - [25 Object class](https://github.com/mittulmandhan/java-interview-prep/tree/master/25%20Object%20class)
+ - []()
