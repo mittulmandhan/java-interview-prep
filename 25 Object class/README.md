@@ -83,11 +83,11 @@ public class A {
 	}
 }
 ````
-<br>
+
 ### hashCode()
 * For every object, JVM generates a unique number which called hash code.
 * hashCode() method returns that hash code that is used to search the object in Heap.
-* A common misconce[tion about this method is that it returns the address of the abject in heap which is wrong.
+* A common misconception about this method is that it returns the address of the abject in heap which is wrong.
 * It converts the address of object to an integer by using an algorithm.
 * hashCode() method is native because in Java it is impossible to find address of an object, so it uses native languages like C/C++ to find address of the object.
 * This method is mostly used by JVM while saving the objects into hashing related data structures like HashSet, HashMap, Hashtable, etc. The main advantage of saving objects based on hash codes is that searching becomes easier.
@@ -121,7 +121,7 @@ public class Student {
 	}
 }
 ````
-<br>
+
 ### equals(Object obj)
 * It compares the given object with `this` object(the object on which the method is called).
 * It gives a generic way to compare objects for equality.
