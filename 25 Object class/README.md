@@ -187,42 +187,6 @@ public class A {
 * getClass() method cannot be overrided as it is final.
 * After loading .class file, JVM creates an object of the type java.lang.Class in the Heap area. We can use Class class object to get class level information. It is widely used in refllection
 
-### finalize()
-* This method is called just before an object is garbage collected.
-* It is called by the garbage collector on an object when garbage collector finds out that there are no more references to the object.
-* We should override finalize() method to dispose system resources, perform clean-up activities and minimize memory leaks.
-````
-// program to demonstrate working of finalize()
-public class A {
-
-	// this method will be called by garbage collector
-	@Override
-	protected void finalize() {
-		System.out.println("finalize() method called");
-	}
-
-	public static void main(String[] args) {
-		A a = new A();
-		System.out.println(a.hashCode());
-
-		a = null;
-
-		// calling garbage collector
-		System.gc();
-
-		System.out.println("end");
-	}
-}
-````
-* finalize() method is called only once in the life time of an object even though that object is eligible for garbage collection multiple times.
-
-### clone()
-* It returns a new object that is exactly the same as this object.
-* It returns a deep copy/clone of this object.
-* __Advantages of clone() method:__
-  - If we use assignment operator to assign an object reference to another reference variable then it points to the same object in heap which is called shallow copy. Due to this any changes made through the copy reference variable will be reflected in the original object.
-  - If we use copy constructor, then we have to write code to reassign all the fields of the class in the copy constructor explicitly. But in clone() method we don't need to explicitly write any code, just call the clone() method and it will return the deep copy i.e. the clone of this object.
-
 <br><br>__Resources:__
 * https://www.geeksforgeeks.org/object-class-in-java/
 * https://www.geeksforgeeks.org/clone-method-in-java-2/
