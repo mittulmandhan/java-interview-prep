@@ -1,6 +1,6 @@
 package example7;
 
-class B {
+class B implements A{
 	public static void main(String[] args) {
 		// All of this statements are valid
 		// as x & y are static member of interface A

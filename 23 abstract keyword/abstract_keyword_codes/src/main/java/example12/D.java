@@ -9,8 +9,8 @@ public class D extends C {
 	}
 
 	public static void main(String[] args) {
-		A a = new D();
-		a.ab();
-		a.my();
+		D d = new D();
+		d.ab();
+		d.my();
 	}
 }
