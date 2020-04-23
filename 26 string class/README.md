@@ -59,37 +59,37 @@ __11.)String(StringBuilder s_builder)__<br>
 Constructs a new String from the given StringBuilder class' object.
 
 ## String Class Methods
-__1.)int length()__<br>
+<br>__1.)int length()__<br>
 Returns the number of characters in the String.
-__2.)Char charAt(int i)__<br>
+<br>__2.)Char charAt(int i)__<br>
 Returns the character at ith index.
-__3.)String substring(int i)__<br>
+<br>__3.)String substring(int i)__<br>
 Returns the substring from the ith  index character to end.
-__4.)String substring (int i, int j)__<br>
+<br>__4.)String substring (int i, int j)__<br>
 Returns the substring from ith to jth(excluding jth index) index.
-__5.)String concat( String str)__<br>
+<br>__5.)String concat( String str)__<br>
 Concatenates the given string at the end of `this` string.
-__6.)int indexOf(String s)__<br>
+<br>__6.)int indexOf(String s)__<br>
 Returns the index of `this` String at which the given String s is first occuring.
-__7.)int indexOf (String s, int i)__<br>
+<br>__7.)int indexOf (String s, int i)__<br>
 Returns the index of `this` String at which the given String s is first occuring but starting from ith index.
-__8.)Int lastIndexOf(String s)__<br>
+<br>__8.)Int lastIndexOf(String s)__<br>
 Returns the index of `this` String at which the given String s is last occuring.
-__9.)boolean equals( Object otherObj)__<br>
+<br>__9.)boolean equals( Object otherObj)__<br>
 Compares `this` String to the given String. This is a case sensitive comparison.
-__10.)boolean  equalsIgnoreCase(String anotherString)__<br>
+<br>__10.)boolean  equalsIgnoreCase(String anotherString)__<br>
 Compares `this` String to the given String, ignoring case considerations/sensitiveness.
-__11.)int compareTo(String anotherString)__<br>
+<br>__11.)int compareTo(String anotherString)__<br>
 Compares `this` String and given String(i.e. anotherString) lexicographically.
-__12.)int compareToIgnoreCase( String anotherString))__<br>
+<br>__12.)int compareToIgnoreCase( String anotherString))__<br>
 Compares `this` String and given String(i.e. anotherString) lexicographically, ignoring case considerations/sensitiveness.
-__13.)String toLowerCase()__<br>
+<br>__13.)String toLowerCase()__<br>
 Converts all the characters in `this` String to lower case and returns the result string.
-__14.)String toUpperCase()__<br>
+<br>__14.)String toUpperCase()__<br>
 Converts all the characters in `this` String to upper case and returns the result string.
-__15.)String trim()__<br>
+<br>__15.)String trim()__<br>
 Returns the copy of `this` String, copy String is same as this String copy String does not have whitespaces at both ends. It does not affect the whitespaces in the middle
-__16.)String replace (char oldChar, char newChar)__<br>
+<br>__16.)String replace (char oldChar, char newChar)__<br>
 Returns a new String in which all the occurences of oldChar in `this` char is replaced to newChar.
 
 
