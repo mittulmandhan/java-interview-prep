@@ -19,6 +19,10 @@ public class A {
 	}
 }
 ````
+__output:__
+````
+Hello
+````
 __2.)String(byte[] byte_arr, Charset char_set)__<br>
 Constructs a String by decoding the byte array and it uses the given character set for decoding. We can choose ascii, UTF-8, UTF-16 and more using char_set object of type Charset.
 ````
@@ -30,6 +34,10 @@ public class A {
 		System.out.println(s);
 	}
 }
+````
+__output:__
+````
+Hello
 ````
 __3.)String(byte[] byte_arr, String char_set_name)__<br>
 Construct a new String by decoding the byte array. In the second argument, we can give character set name as string. This constructor also throws UnsupportedEncodingException.
@@ -45,6 +53,11 @@ public class A {
 	}
 }
 ````
+__output:__
+````
+Hello
+Hello
+````
 __4.)String(byte[] byte_arr, int start_index, int length)__<br>
 Construct a new String from the byte array depending on the start_index and length.
 ````
@@ -55,6 +68,10 @@ public class A {
 		System.out.println(s);
 	}
 }
+````
+__output:__
+````
+ell
 ````
 __5.)String(byte[] byte_arr, int start_index, int length, Charset char_set)__<br>
 Construct a new String from the byte array depending on the start_index & length, and also specify the character set for encoding.
@@ -68,6 +85,10 @@ public class A {
 	}
 }
 ````
+__output:__
+````
+ell
+````
 __6.)String(byte[] byte_arr, int start_index, int length, String char_set_name)__<br>
 Construct a new String from the byte array depending on the start_index and length, and give character set name as a string.This constructor throws UnsupportedEncodingException.
 ````
@@ -78,6 +99,10 @@ public class A {
 		System.out.println(s);
 	}
 }
+````
+__output:__
+````
+ell
 ````
 __7.)String(char[] char_arr)__<br>
 Constructs a new String from the given sequence or array of characters.
@@ -90,6 +115,10 @@ public class A {
 	}
 }
 ````
+__output:__
+````
+Hello
+````
 __8.)String(char[] char_array, int start_index, int count)__<br>
 Constructs a String from the given character array depending on the offset(start) and count of characters.
 ````
@@ -100,6 +129,10 @@ public class A {
 		System.out.println(s);
 	}
 }
+````
+__output:__
+````
+ell
 ````
 __9.)String(int[] codePoints, int start_index, int count)__<br>
 Constructs a String from the given array of unicode array(ASCII unicodes) depending on the start_index and count of characters.
@@ -112,6 +145,10 @@ public class A {
 	}
 }
 ````
+__output:__
+````
+ello
+````
 __10.)String(StringBuffer s_buffer)__<br>
 Constructs a new String from the given StringBuffer class' object.
 ````
@@ -122,6 +159,10 @@ public class A {
 		System.out.println(s);
 	}
 }
+````
+__output:__
+````
+Hello
 ````
 __11.)String(StringBuilder s_builder)__<br>
 Constructs a new String from the given StringBuilder class' object.
@@ -134,7 +175,11 @@ public class A {
 	}
 }
 ````
-__11.)String(String original)__<br>
+__output:__
+````
+Hello
+````
+__12.)String(String original)__<br>
 Initializes a newly created String object so that it represents the same sequence of characters as the argument; in other words, the newly created string is a copy of the argument string.
 ````
 public class A {
@@ -146,6 +191,11 @@ public class A {
 	}
 }
 
+````
+__output:__
+````
+Hello
+Mittul
 ````
 
 ## String Class Methods
@@ -208,6 +258,24 @@ public class A {
 		System.out.println(s.replace('M', 'R'));
 	}
 }
+````
+__output:__
+````
+16
+M
+Mandhan 
+ttul
+ Mittul Mandhan is me
+1
+11
+true
+true
+-45
+-77
+mittul
+MITTUL
+Mittul Mandhan
+ Rittul Randhan 
 ````
 
 <br><br>__Resources:__
