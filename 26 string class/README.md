@@ -22,41 +22,131 @@ public class A {
 __2.)String(byte[] byte_arr, Charset char_set)__<br>
 Constructs a String by decoding the byte array and it uses the given character set for decoding. We can choose ascii, UTF-8, UTF-16 and more using char_set object of type Charset.
 ````
+public class A {
+	public static void main(String[] args) {
+		byte[] byte_arr = {72, 101, 108, 108, 111};
+		Charset charset = Charset.defaultCharset();
+		String s = new String(byte_arr, charset);
+		System.out.println(s);
+	}
+}
 ````
 __3.)String(byte[] byte_arr, String char_set_name)__<br>
 Construct a new String by decoding the byte array. In the second argument, we can give character set name as string. This constructor also throws UnsupportedEncodingException.
 ````
+public class A {
+	public static void main(String[] args) throws UnsupportedEncodingException {
+		byte[] byte_arr = { 72, 101, 108, 108, 111 };
+		String s = new String(byte_arr, "US-ASCII");
+		System.out.println(s);
+
+		s = new String(byte_arr, "UTF-8");
+		System.out.println(s);
+	}
+}
 ````
 __4.)String(byte[] byte_arr, int start_index, int length)__<br>
 Construct a new String from the byte array depending on the start_index and length.
 ````
+public class A {
+	public static void main(String[] args) {
+		byte[] byte_arr = { 72, 101, 108, 108, 111 };
+		String s = new String(byte_arr, 1, 3);
+		System.out.println(s);
+	}
+}
 ````
 __5.)String(byte[] byte_arr, int start_index, int length, Charset char_set)__<br>
 Construct a new String from the byte array depending on the start_index & length, and also specify the character set for encoding.
 ````
+public class A {
+	public static void main(String[] args) {
+		byte[] byte_arr = { 72, 101, 108, 108, 111 };
+		Charset charset = Charset.defaultCharset();
+		String s = new String(byte_arr, 1, 3, charset);
+		System.out.println(s);
+	}
+}
 ````
 __6.)String(byte[] byte_arr, int start_index, int length, String char_set_name)__<br>
 Construct a new String from the byte array depending on the start_index and length, and give character set name as a string.This constructor throws UnsupportedEncodingException.
 ````
+public class A {
+	public static void main(String[] args) throws UnsupportedEncodingException {
+		byte[] byte_arr = { 72, 101, 108, 108, 111 };
+		String s = new String(byte_arr, 1, 3, "US-ASCII");
+		System.out.println(s);
+	}
+}
 ````
 __7.)String(char[] char_arr)__<br>
 Constructs a new String from the given sequence or array of characters.
 ````
+public class A {
+	public static void main(String[] args) {
+		char[] char_arr = { 'H', 'e', 'l', 'l', 'o' };
+		String s = new String(char_arr);
+		System.out.println(s);
+	}
+}
 ````
 __8.)String(char[] char_array, int start_index, int count)__<br>
 Constructs a String from the given character array depending on the offset(start) and count of characters.
 ````
+public class A {
+	public static void main(String[] args) {
+		char[] char_arr = { 'H', 'e', 'l', 'l', 'o' };
+		String s = new String(char_arr, 1, 3);
+		System.out.println(s);
+	}
+}
 ````
-__9.)String(int[] uni_code_points, int start_index, int count)__<br>
-Constructs a String from the given array of uni_code_array(ASCII unicodes) depending on the start_index and count of characters.
+__9.)String(int[] codePoints, int start_index, int count)__<br>
+Constructs a String from the given array of unicode array(ASCII unicodes) depending on the start_index and count of characters.
 ````
+public class A {
+	public static void main(String[] args) {
+		int[] unicodes = { 72, 101, 108, 108, 111 };
+		String s = new String(unicodes, 1, 4);
+		System.out.println(s);
+	}
+}
 ````
 __10.)String(StringBuffer s_buffer)__<br>
 Constructs a new String from the given StringBuffer class' object.
 ````
+public class A {
+	public static void main(String[] args) {
+		StringBuffer s_buffer = new StringBuffer("Hello");
+		String s = new String(s_buffer);
+		System.out.println(s);
+	}
+}
 ````
 __11.)String(StringBuilder s_builder)__<br>
 Constructs a new String from the given StringBuilder class' object.
+````
+public class A {
+	public static void main(String[] args) {
+		StringBuilder s_builder = new StringBuilder("Geeks");
+		String s = new String(s_builder);
+		System.out.println(s);
+	}
+}
+````
+__11.)String(String original)__<br>
+Initializes a newly created String object so that it represents the same sequence of characters as the argument; in other words, the newly created string is a copy of the argument string.
+````
+public class A {
+	public static void main(String[] args) {
+		String s1 = new String("Hello");
+		System.out.println(s1);
+		String s2 = "Mittul";
+		System.out.println(s2);
+	}
+}
+
+````
 
 ## String Class Methods
 <br>__1.)int length()__<br>
@@ -89,8 +179,38 @@ Converts all the characters in `this` String to lower case and returns the resul
 Converts all the characters in `this` String to upper case and returns the result string.
 <br>__15.)String trim()__<br>
 Returns the copy of `this` String, copy String is same as this String copy String does not have whitespaces at both ends. It does not affect the whitespaces in the middle
-<br>__16.)String replace (char oldChar, char newChar)__<br>
+<br>__16.)String replace(char oldChar, char newChar)__<br>
 Returns a new String in which all the occurences of oldChar in `this` char is replaced to newChar.
 
+````
+public class A {
+	public static void main(String[] args) {
+		String s = " Mittul Mandhan ";
+		String mystr1 = new String(" Mittul Mandhan ");
+		String mystr2 = new String(" mittul mandhan ");
+		String mystr3 = "Mittul";
+		String mystr4 = "miTTul";
 
+		System.out.println(s.length());// 16
+		System.out.println(s.charAt(8));// 'M'
+		System.out.println(s.substring(8));// "Mandhan "
+		System.out.println(s.substring(3, 7));// "ttul"
+		System.out.println(s.concat("is me"));// " Mittul Mandhan is me"
+		System.out.println(s.indexOf("Mittul"));// 1
+		System.out.println(s.lastIndexOf("dhan"));
+		System.out.println(s.equals(mystr1));
+		System.out.println(s.equalsIgnoreCase(mystr2));
+		System.out.println(s.compareTo(mystr3));
+		System.out.println(s.compareToIgnoreCase(mystr4));
+		System.out.println(mystr4.toLowerCase());
+		System.out.println(mystr4.toUpperCase());
+		System.out.println(s.trim());
+		System.out.println(s.replace('M', 'R'));
+	}
+}
+````
+
+<br><br>__Resources:__
+* https://www.geeksforgeeks.org/string-class-in-java/
+* https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
 
