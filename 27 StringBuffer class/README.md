@@ -4,7 +4,7 @@
 * StringBuffer is public final class.
 * So, the signature of StringBuffer is<br>
   `public final class StringBuffer extends Object implements Serializable, CharSequence, Appendable`
-* String represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences.
+* String represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences thats why StringBuffer is called mutable class.
 * StringBuffer class is synchronizable and data in  each thread is thread safe.
 
 
