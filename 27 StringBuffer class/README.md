@@ -1,17 +1,19 @@
 # StringBuffer Class
+* StringBuffer class exists inside java.lang package.
 * StringBuffer class is a peer class of String class and provides the mostly similar functionalities.
-* It extends Object class and implements Serializable, Appendable & CharSequence interfaces.
+* It extends AbstractStringBuilder class and implements Serializable & CharSequence interfaces.
 * StringBuffer is public final class.
 * So, the signature of StringBuffer is<br>
-  `public final class StringBuffer extends Object implements Serializable, CharSequence, Appendable`
+  `public final class StringBuffer extends AbstractStringBuilder implements Serializable, CharSequence`
 * String represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences thats why StringBuffer is called mutable class.
-* StringBuffer class is synchronizable and data in  each thread is thread safe.
+* StringBuffer class provides syncronization and data in  each thread is thread safe.
+* When there are multiple threads and we need syncronization then StringBuffer is recommended to use because in StringBuilder does not provide syncronization and thread safety.
 
 
 ## StringBuffer Constructors
 * __StringBuffer()__: It reserves space for 16 characters without reallocation.<br>
   `StringBuffer s=new StringBuffer();`
-* __StringBuffer( int size)__: It accepts a String argument that explicitly sets the size of the buffer.<br>
+* __StringBuffer(int size)__: It accepts a String argument that explicitly sets the size of the buffer.<br>
   `StringBuffer s=new StringBuffer(20);`
 * __StringBuffer(String str)__: It accepts a String argument that sets the initial contents of the StringBuffer object and reserves room for 16 more/additional characters without reallocation.<br>
   `StringBuffer s=new StringBuffer("GeeksforGeeks");`
