@@ -8,6 +8,7 @@
 * String represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences thats why StringBuffer is called mutable class.
 * StringBuffer class provides syncronization and data in  each thread is thread safe.
 * When there are multiple threads and we need syncronization then StringBuffer is recommended to use because in StringBuilder does not provide syncronization and thread safety.
+* StringBuffer methods can write original character sequence in it.
 
 
 ## StringBuffer Constructors
