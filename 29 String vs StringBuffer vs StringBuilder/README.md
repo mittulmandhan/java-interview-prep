@@ -44,8 +44,8 @@ demo = "Bye";
 
 Basis          | String               | StringBuffer                | StringBuilder
 -------------- | -------------------- | --------------------------- | --------------
-Storage Area   | Constant String Pool | Heap                        | Heap
-Modifiable     | Immutable            | Mutable                     | Mutable
-Thread Safe    | Yes                  | Yes                         | No
-Sychronized    | Yes                  | Yes                         | No
-Performance    | Slow                 | Slow but faster than String | Fastest
+__Storage Area__   | Constant String Pool | Heap                        | Heap
+__Modifiable__     | Immutable            | Mutable                     | Mutable
+__Thread Safe__    | Yes                  | Yes                         | No
+__Sychronized__    | Yes                  | Yes                         | No
+__Performance__    | Slow                 | Slow but faster than String | Fastest
