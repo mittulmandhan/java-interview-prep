@@ -81,3 +81,8 @@ Array.getX(arr, indexOfRetrieval);
 
 ## Get length of the array using Array class
 * __static int getLength(Object array):__ This method returns the length of the specified array object, as an int.
+
+
+<br><br>__Resources:__
+* https://docs.oracle.com/javase/9/docs/api/java/lang/reflect/Array.html
+* https://www.geeksforgeeks.org/reflection-array-class-in-java/
