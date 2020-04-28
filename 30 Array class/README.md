@@ -76,6 +76,8 @@ Array.getX(arr, indexOfRetrieval);
 * __static double getDouble(Object array, int index):__ This method returns the value of the indexed component in the specified array object, as a double.
 * __static float getFloat(Object array, int index):__ This method returns the value of the indexed component in the specified array object, as a float.
 * __static int getInt(Object array, int index):__ This method returns the value of the indexed component in the specified array object, as an int.
-* __static int getLength(Object array):__ This method returns the length of the specified array object, as an int.
 * __static long getLong(Object array, int index):__ This method returns the value of the indexed component in the specified array object, as a long.
 * __static short getShort(Object array, int index):__ This method returns the value of the indexed component in the specified array object, as a short.
+
+## Get length of the array using Array class
+* __static int getLength(Object array):__ This method returns the length of the specified array object, as an int.
