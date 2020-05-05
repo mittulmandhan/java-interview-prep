@@ -28,3 +28,7 @@
  - [26 string class notes](https://github.com/mittulmandhan/java-interview-prep/tree/master/26%20string%20class)/[string class codes](https://github.com/mittulmandhan/java-interview-prep/tree/master/26%20String%20class/string_class_codes)
  - [27 StringBuffer class](https://github.com/mittulmandhan/java-interview-prep/tree/master/27%20StringBuffer%20class)
  - [28 StringBuilder class](https://github.com/mittulmandhan/java-interview-prep/tree/master/28%20StringBuilder%20class)
+ - [29 String vs StringBuffer vs StringBuilder](https://github.com/mittulmandhan/java-interview-prep/tree/master/29%20String%20vs%20StringBuffer%20vs%20StringBuilder)
+ - [30 Array class](https://github.com/mittulmandhan/java-interview-prep/tree/master/30%20Array%20class)
+ - [31 Arrays class](https://github.com/mittulmandhan/java-interview-prep/tree/master/31%20Arrays%20class)
+ - [32 Exceptions](https://github.com/mittulmandhan/java-interview-prep/tree/master/32%20Exceptions)
