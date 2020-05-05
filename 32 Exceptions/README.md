@@ -218,3 +218,8 @@ java.lang.ArrayIndexOutOfBoundsException: 7
 * Errors are also unchecked exceptions like runtime exceptions.
 * It is out of programming scope because type of error can't be predicted but may be prevented with well planning.
 * Examples: VirtualMachineError, AssertionError, OutOfMemoryError, LinkageError, InstantiationError.
+
+<br><br>__Resources:__
+* https://www.tutorialspoint.com/java/java_exceptions.htm
+* https://www.benchresources.net/exception-hierarchy-in-java/
+* https://www.geeksforgeeks.org/exceptions-in-java/
