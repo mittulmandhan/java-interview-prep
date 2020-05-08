@@ -150,3 +150,7 @@ Given User is INVALID
 	at example4.UserValidation.main(UserValidation.java:17)
 in catch
 ````
+
+
+<br><br>__Resources:__
+* https://www.javatpoint.com/throws-keyword-and-difference-between-throw-and-throws
