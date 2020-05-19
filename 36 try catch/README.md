@@ -254,5 +254,35 @@ __output:__
 A
 ````
 * When Exception is encountered in inner try block then JVM will search a catch block which supports that exception first in inner catch blocks then after that in outer catch blocks. This design pattern is called __Chain of Responsibility Pattern__.
+````
+public class A {
+
+	public static void main(String[] args) {
+		outerMethod();
+	}
+
+	private static void outerMethod() {
+		try {
+			try {
+				int i = 1 / 0;
+				A a = null;
+				a.toString();
+			} catch (ArithmeticException e) {
+				// this catch block is called
+				// when an arithmetic exception will occur
+				System.out.println("inner catch");
+			} finally {
+				System.out.println("inner finally");
+			}
+		} catch (NullPointerException e) {
+			// this catch block will be called
+			// when there is null pointer exception
+			System.out.println("outer catch");
+		} finally {
+			System.out.println("outer finally");
+		}
+	}
+}
+````
 ### Flow in try-catch block
 ![picture alt](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/try-catch/try-catch%201.jpg)
