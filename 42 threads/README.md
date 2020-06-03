@@ -132,7 +132,7 @@ access this thread.<br>
 * Main thread has main() method in the bottom of the its stack whereas other threads have corresponding run() method in the bottom of the stack.
 * A Thread can only be started once i.e. start() method can be used only once.
 ## Life Cycle of a Thread
-![alt picture](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/threads/thread%20life%20cycle.jpg)
+![alt picture](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/threads/life%20cycle%20of%20a%20thread.jpg)
 * When a thread is created with new keyword it goes in new state.
 * When we start that thread by using start() method it moves to runnable state. Now, thread scheduler moves threads to running state.
 * At running state, if user does not give any input then it gets into block state and starts again.
