@@ -7,16 +7,43 @@
   - Thread class
 * Generally Java programs follow sequential order plus we have only one thread(i.e. main thread) and a stack for main thread.
 ````
-
+// All of these lines will go sequentially
+// no next line can be executed until its previous line is executed
+class A {
+  public static void main(string[] args) {
+    int a=5, b=10;
+    int c;
+    c=a+b;
+  }
+}
 ````
 * In Java threading, we can create as many threads(for each thread there is one stack) as we want which can be synchronous or asynchronous.
 * Java supports threading through stack.
 * JVM executes methods in stack.
-* __If we have multiple stacks then JVM has to implement multiple methods.__
-* __Jvm uses stack to stack for congruency.__
+* If we have multiple stacks then JVM has to implement multiple methods.
 * JVM sets 'main' as the name of main thread i.e. started with main method.
 * You can change the name of main thread as well.
 ````
+public class Thread_Demo implements Runnable {
+	@Override
+	public void run() {
+		System.out.println("Hello " + Thread.currentThread().getName());
+	}
+
+	public static void main(String[] args) {
+		// getName() of the main thread
+		System.out.println(Thread.currentThread().getName());
+    
+    // we can also change the name of main thread using setName() method
+    Thread.currentThread().setName("mittul");
+    System.out.println(Thread.currentThread().getName());
+	}
+}
+````
+__output:__
+````
+main
+mittul
 ````
 ## java.lang.Runnable
 * Runnable is an interface.
