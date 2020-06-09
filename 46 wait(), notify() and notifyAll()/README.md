@@ -118,4 +118,33 @@ public class ProducerConsumerExampleWithWaitAndNotify
    }
 }
 ````
+
+__output:__
+````
+Produced: 0
+Produced: 1
+Produced: 2
+Produced: 3
+Produced: 4
+Queue is full Producer is waiting , size: 5
+Consumed: 0
+Produced: 5
+Queue is full Producer is waiting , size: 5
+Consumed: 1
+Consumed: 2
+Consumed: 3
+Consumed: 4
+Consumed: 5
+Queue is empty Consumer is waiting , size: 0
+Produced: 6
+Produced: 7
+Produced: 8
+Produced: 9
+Produced: 10
+Queue is full Producer is waiting , size: 5
+Consumed: 6
+Produced: 11
+Queue is full Producer is waiting , size: 5
+Consumed: 7
+````
 __Note:__ We can try changing time taken by producer and consumer threads to different times, and check the different outputs in different scenario.
