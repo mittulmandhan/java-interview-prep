@@ -50,11 +50,32 @@ mittul
 * It is to be implemented by a class whose instances are intended to be executed by a thread.
 * Runnable interface has only one method defined in it which is run().
 * Runnable can't throw checked exception but RuntimeException can be thrown from run() method.
-* Uncaught exceptions are handled by exception handler of the thread, if JVM can’t handle or catch exceptions, it prints the stack trace and terminates the flow.
-````
-````
+* Uncaught exceptions are handled by exception handler of the thread, if Exception Handler can’t handle or catch exceptions, JVM prints the stack trace and terminates the flow.
 * Program showing congruency:
 ````
+public class Thread_Demo implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("Thread_Demo.run()");
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Thread_Demo.main()");
+		Thread t = new Thread(new Thread_Demo());
+		// It will load the run() method on same stack i.e. main stack
+		// t.run();
+
+		// It will make a new stack and load run() method on that stack
+		t.start();
+	}
+
+}
+````
+__output:__
+````
+Thread_Demo.main()
+Thread_Demo.run()
 ````
 ## java.lang.Thread
 * Thread is a line of execution within a program.
@@ -150,9 +171,42 @@ access this thread.<br>
 * There are two ways to create a thread:
 ### By extending the Thread class
 ````
+public class ThreadDemo extends Thread {
+	@Override
+	public void run() {
+		System.out.println("Hello " + Thread.currentThread().getName());
+	}
+
+	public static void main(String[] args) {
+		ThreadDemo t = new ThreadDemo();
+		t.start();
+	}
+
+}
+````
+__output:__
+````
+Hello Thread-0
 ````
 ### By implementing the Runnable interface
 ````
+public class Thread_Demo implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("Thread_Demo.run()");
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Thread_Demo.main()");
+		Thread t = new Thread(new Thread_Demo());
+		t.start();
+	}
+}
+````
+__output:__
+````
+Thread_Demo.run()
 ````
 * 2nd way is preffered almost always to create a thread.
 * start() method starts a new stack & loads run() method in it.
@@ -167,3 +221,11 @@ access this thread.<br>
 * yield() sends thread into runnable state from running state.
 * In Java, threads can have priority from 1 to 10.
 * By default, a thread gets a priority i.e. 5(normal).
+
+__Note:__ See the codes for more example codes
+
+__Resources:__
+* https://www.geeksforgeeks.org/java-lang-thread-class-java/#:~:text=Java%20provides%20a%20thread%20class,over%20ride%20it's%20run%20method.&text=Thread(String%20name)%3A%20Allocates%20a%20new%20Thread%20object
+* https://www.geeksforgeeks.org/runnable-interface-in-java/
+* https://docs.oracle.com/javase/tutorial/essential/concurrency/procthread.html
+* https://howtodoinjava.com/java-concurrency-tutorial/
