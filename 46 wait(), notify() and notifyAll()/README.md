@@ -148,3 +148,18 @@ Queue is full Producer is waiting , size: 5
 Consumed: 7
 ````
 __Note:__ We can try changing time taken by producer and consumer threads to different times, and check the different outputs in different scenario.
+
+## If wait(), notify(), notifyAll() are used in concurrency then why these methods exist in Object class?
+* In Java, resource(object) calls the wait() method to make the current worker(current thread) release the lock on the resource and wait.
+* Resource(object) then calls notify() method to notify the waiting worker(thread) that now it is time to aquire the resource and start working again.
+* Every object has a monitor on it and monitor uses workqueue & mutex(lock) to synchronize that object.
+* So it is senseless to call wait(), and notify() on the thread. Hence wait() and notify() exists inside Object class so that all object can call them when synchronized.
+* Obviously Thread class also has a wait() in it because it is an indirect child of Object class but one should not call wait() on thread instead call wait() on the resource on which the thread is working.
+
+## What if wait(), notify(), and notifyAll() are in Thread class? what difference it could have made?
+* In Java, the object itself is the entity that is shared between threads which allows them to communicate with each other.
+* Threads have no specific knowledge of each other and they can run asynchronoulsy. They do not have any business in knowing about each other, they only need to know about the object/resource they are using.
+* Threads run and lock, wait, and notify on the object that they want to get access to.
+* In Java, we use objects as synchronization, mutex, and communication points between threads.
+* If wait(), notify(), and notifyAll() would have existed inside Thread class then each thread has to keep information and status of every other thread which is in the entry-set, wait-set or using the resource. As we know one thread can aquire multiple resources at a time, so this approach will need huge amount of space as compare to the approach we use currently. On the contrary, threads are keeping the data which violates the concept of independent execution.
+* Hence it is better to keep the wait(), notify(), and notifyAll() methods in the Object class.
