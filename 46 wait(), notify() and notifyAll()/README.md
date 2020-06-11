@@ -162,4 +162,9 @@ __Note:__ We can try changing time taken by producer and consumer threads to dif
 * Threads run and lock, wait, and notify on the object that they want to get access to.
 * In Java, we use objects as synchronization, mutex, and communication points between threads.
 * If wait(), notify(), and notifyAll() would have existed inside Thread class then each thread has to keep information and status of every other thread which is in the entry-set, wait-set or using the resource. As we know one thread can aquire multiple resources at a time, so this approach will need huge amount of space as compare to the approach we use currently. On the contrary, threads are keeping the data which violates the concept of independent execution.
+
+<br><br>__Resources:__
+* https://stackoverflow.com/questions/17840397/concept-behind-putting-wait-notify-methods-in-object-class#:~:text=wait%20-%20wait%20method%20tells%20the,monitor%20and%20go%20to%20sleep.&text=That's%20one%20reason%20why%20these,waiting%20on%20the%20Object's%20monitor
+* https://stackoverflow.com/questions/16197135/how-can-the-wait-and-notify-methods-be-called-on-objects-that-are-not-thread
+* https://howtodoinjava.com/java/multi-threading/wait-notify-and-notifyall-methods/
 * Hence it is better to keep the wait(), notify(), and notifyAll() methods in the Object class.
