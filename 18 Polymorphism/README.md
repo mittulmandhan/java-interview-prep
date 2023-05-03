@@ -25,7 +25,7 @@ class A {
 ````
 * In overloading, Compiler is responsible to resolve the method call.
 * When overloading methods, one row is added in the method table for every new overloaded method just like any other method.
-* Two method having same name, return type, no. arguments and data types of arguments but different names are not valid because compiler works on datatypes and changing the name of parameters does not make any difference.
+* Two method having same name, return type, no. arguments and data types of arguments but different argument names are not valid because compiler works on datatypes and changing the name of parameters does not make any difference.
 ````
 // here two method have same set of arguments i.e same no. of arguments and same types of arguments
 // changing variable name does not matter since compiler works on data types not on variable names
