@@ -103,7 +103,7 @@ public void ab(int x) {
 }
 ````
 Here, `public void ab(int x)` is the signature of ab() method.
-* Method overloading basically means that in method table the parent class' method reference of the method signature is overwritten by the child class' method reference of the method signature i.e. why child class' implementation for the method is executed.
+* Method overriding basically means that in method table the parent class' method reference of the method signature is overwritten by the child class' method reference of the method signature i.e. why child class' implementation for the method is executed.
 ````
 class A {
   void ab() {
