@@ -75,7 +75,7 @@
 * Constructors are only called once in the life span of an object i.e. object is initialized.
 * Constructor is not a member of class i.e. why it cannot be inherited in child class.
 * Like methods, we can give access specifiers(public, private, default & protected) to constructors, but unlike methods, we cannot give non-access modifiers(such as final, static, abstract, etc) to constructors. It means that you can only specify how to access constructor, not the behaviour of constructors. Also, instead of determining the ability to invoke a method, the access level of a constructor determines the ability to create/instatntiate an object. By default, access modifier of constructor is same as class' access modifier. 
-* As we know by default constructors have the same access level as the class and class cannot be private. Hence, default constructor cannot be private as well but user-defined constructors can be private.
+* As we know by default constructors have the same access level as the class and class cannot be private. Hence, constructors can be private only when user declares it as private.
 ## `this()` and `super()` in constructors
 * <b>Every constructor's first task is to invoke another constructor</b>. If we include `this()` at first line constructor will invoke another constructor of same class otherwise it will call superclass constructor using explicit or implicit super() statement.
 * From within a constructor, you can explicitly invoke another constructor from the same class by using the `this()` statement. We can do this, when we have mutiple overloading constructors, to form constructor chaining. `this()` comes at first line of the constructor.
