@@ -1,7 +1,7 @@
 # `final` Keyword
 * `final` is a keyword.
 * `final` is a non access modifier in Java.
-* `final` can be:
+*  Followings can be `final`:
   - variables
   - methods
   - classes
