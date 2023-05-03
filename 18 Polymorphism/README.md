@@ -123,7 +123,7 @@ class B extends A {
   }
 }
 ````
-* In Overriding, overridden and overriding methods share same name, access modifiers as well as non-access modifiers, return type, no. of arguments and data types of arguments are same but the definition may be different.
+* In Overriding, overridden and overriding methods share same name, access modifiers as well as non-access modifiers, return type, no. of arguments and data types of arguments are same but the method definition is different.
 * Java Virtual Machine is responsible for resolving the method call in case of method overriding.
 ````
 // only the reference for ab() method in the method table will be overwritten at the run-time
