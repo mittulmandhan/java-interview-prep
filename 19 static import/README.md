@@ -26,7 +26,7 @@ class B {
 }
 ````
 
-* we can also use out by name which is a static member of System class to reduce the code `System.out.println("Hello");` to `out.println("Hello");`
+* we can also use out by name (which is a static member of System class) to reduce the code from `System.out.println("Hello");` to `out.println("Hello");`
 ````
 import java.lang.System.out;
 
