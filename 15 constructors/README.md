@@ -84,7 +84,7 @@
 * `this()` does not changes the order/flow of initialization of objects i.e. top-down(parent to child) because constructor can only contain `this()` or `super()`. Hence, even if we are forming a chain using `this()` then that chain ends on some constructor that makes `super()` call so that the order still remains the same.
 * Instance methods cannot be invoked while making call to another constructor using `this()` or `super()` because at that point method table's address is not assigned to vtable reference variable present inside object so this reference will not be able to find method table and instance method cannot be accessed. But if the method is static we will not face such problem because static methods do not need object reference to be invoked.
 ## Catching exceptions not allowed inside constructor
-* One enforced rule in Java is that we cannot catch any exceptions thrown by the constructor, invoked with `this()` or `super()` statement.
+* One enforced rule in Java is that we cannot catch any exceptions thrown by this() or super() statement.
 * <h3>Reasons:</h3>
 1. If you catch an exception from `super()` or `this()`, then the code looks like:
 ````
