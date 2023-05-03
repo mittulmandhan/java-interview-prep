@@ -71,7 +71,7 @@ class A {
 * It is inside method.
 * One method can contain one or more local blocks.
 * They are executed in the same sequence they are declared/defined.
-* compiler does not provide any block by default.
+* compiler does not provide any local block by default.
 * local blocks offer flexibility and security.
 ````
 class A {
@@ -87,7 +87,7 @@ class A {
 }
 ````
 ### local blocks can access class, instance and local level variables
-* Local block is used when multiple independent logics are to be performed in main method. So, we separate them by making local blocks. This arrangement, gives flexibility and security.
+* Local block is used when multiple independent logics are to be performed in a method. So, we separate them by making local blocks. This arrangement, gives flexibility and security.
 ````
 class A {
   public static void main(String args[]) {
