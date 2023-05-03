@@ -15,7 +15,7 @@
 * Init blocks are executed in the same sequence they are declared.
 * One init block calls other init block of the same class.
 * We can not call an init block by our choice, they are called automatically.
-* It is called at the time of class loading.
+* It is called at the time of object creation.
 * compiler calls the init block as <init>.
 * default constructor have following structure:
 ````
