@@ -2,7 +2,7 @@
 * StringBuilder class exists inside java.lang package.
 * StringBuilder class is identical to StringBuffer except StringBuilder does not provide syncronization.
 * StringBuilder and StringBuffer share same set of functionalities except for syncronization.
-* Signature of StringBuilder is same as StringBuilder i.e.<br>
+* Signature of StringBuilder is same as StringBuffer i.e.<br>
   `public final class StringBuilder extends AbstractStringBuilder implements Serializable, CharSequence`
 * String represents fixed-length, immutable character sequences while StringBuilder represents growable and writable character sequences thats why StringBuilder is called mutable class.
 * When we have single thread then StringBuilder is recommended to use because it will be faster than StringBuilder when we have only one thread.
