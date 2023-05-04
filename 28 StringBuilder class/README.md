@@ -5,7 +5,7 @@
 * Signature of StringBuilder is same as StringBuffer i.e.<br>
   `public final class StringBuilder extends AbstractStringBuilder implements Serializable, CharSequence`
 * String represents fixed-length, immutable character sequences while StringBuilder represents growable and writable character sequences thats why StringBuilder is called mutable class.
-* When we have single thread then StringBuilder is recommended to use because it will be faster than StringBuilder when we have only one thread.
+* When we have single thread then StringBuilder is recommended to use because it will be faster than StringBuffer when we have only one thread.
 * StringBuilder methods can write original character sequence in it.
 
 
