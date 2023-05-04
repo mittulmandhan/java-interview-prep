@@ -3,7 +3,7 @@
 * Arrays class extends Object class.
 * It is a part of __Collection Framework__.
 * This class consists of public static methods only. These methods provide performing searching, sorting and filling an array.
-* we don't need to create an object Arrays class neither we can.
+* we don't need to create an object of Arrays class neither we can.
 * Since methods of Arrays class are static they can be accessed by using class name.<br>
   `Arrays.<function name>;`
 * __Class Declaration:__<br>
