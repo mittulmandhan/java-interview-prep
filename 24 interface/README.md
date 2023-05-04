@@ -354,7 +354,7 @@ class C implements A,B {
 * Example 7:
 ````
 // Since there is no static block & we have not initialized x in declaration
-// 
+// the code will not compile and ask the user to initialize x
 interface A {
   int x;
 }
