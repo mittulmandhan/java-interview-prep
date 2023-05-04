@@ -19,7 +19,8 @@ class A {
 2. The classes in java.util package handles only objects and hence wrapper classes help in this also.
 3. Data structures in Collection framework such as ArrayList, Stack, Set, Queue and Vector store only objects, not primitive data types.
 4. An object is needed to support synchronization in multi-threading.
-5. To convert strings into data types wwhich is known as parsing operations, here method are used such as parseInt(), parseShort(), parseFloat(), etc.
+5. To convert strings into data types wwhich is known as parsing operations, some 
+methods are used such as parseInt(), parseShort(), parseFloat(), etc.
 
 Primitive data Types | Wrapper Class
 -------------------- | -------------
