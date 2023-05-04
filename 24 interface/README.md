@@ -11,7 +11,7 @@ interface A {
 * An interface contain abstract methods only.
 * Interface cannot contain normal methods.
 * Interface does not have constructors.
-* Interface caanot be instantiated.
+* Interface cannot be instantiated.
 ````
 interface A {
 }
@@ -87,7 +87,7 @@ class C implements B {
 class D extends C {
 }
 ````
-* No interface cannot extend a class.
+* No, interfaces cannot extend a class.
 ## Multiple Inheritance
 * Multiple Inheritance is a type of inheritance where a class inherits more than one classes.
 * Multiple inheritance in OOPS also lead to __Diamond Problem__.
