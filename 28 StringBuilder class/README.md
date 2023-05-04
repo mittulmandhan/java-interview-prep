@@ -1,6 +1,6 @@
 # StringBuilder Class
 * StringBuilder class exists inside java.lang package.
-* StringBuilder class is identical to StringBuilder except StringBuilder does not provide syncronization.
+* StringBuilder class is identical to StringBuffer except StringBuilder does not provide syncronization.
 * StringBuilder and StringBuilder share same set of functionalities except for syncronization.
 * Signature of StringBuilder is same as StringBuilder i.e.<br>
   `public final class StringBuilder extends AbstractStringBuilder implements Serializable, CharSequence`
