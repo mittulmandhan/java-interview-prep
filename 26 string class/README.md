@@ -1,7 +1,7 @@
 # String Class
 * A string is basically a sequence or array of characters.
 * In Java, String is a class.
-* String class is immutable i.e. its objects are constant and cannot be changed once created.
+* String class is immutable i.e. its data members are constant and cannot be changed once created.
 * Creating a String class object:
   - String literal<br>
     `String s = “Hello”;`
