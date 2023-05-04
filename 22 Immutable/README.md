@@ -6,7 +6,7 @@
 
 ### Steps to make an Immutable class:
 <br>__Step 1:__ Create a final class
-  <br>(so that it cannot be inherited and resultantly overriding of the methods prevented)
+  <br>(so that it cannot be inherited and resultantly overriding of the methods and extention of class can be prevented)
 <br><br>__Step 2:__ Data members must be declared as final
   <br>(so that we cannot change the value once initialized)
 <br><br>__Step 3:__ A parameterized constructor
