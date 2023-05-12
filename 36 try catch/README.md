@@ -151,7 +151,7 @@ __output:__
 ````
 a is null
 ````
-* Catch block takes an object of Throwable class as an argument which means the generated exception type or the parent exception class.
+* Catch block takes a Throwable objec5 as an argument i.e. the Throwable or child classes.
 * Try/catch block can be nested in try/catch block. This is called inner or nested try/catch block.
 ````
 public class A1 {
