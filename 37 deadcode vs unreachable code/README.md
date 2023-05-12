@@ -109,10 +109,10 @@ public class IdentifyProblemsInCode {
 	public void howToDoInJava_method2() {
 		System.out.println("how to learn");
 		if (true) {
-			return;
-		}
-		// dead code
+			System.out.println("Hi");
+		}else {// dead code
 		System.out.println(" java");
+  }
 	}
 
 	public void howToDoInJava_method3() {
