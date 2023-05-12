@@ -209,7 +209,7 @@ __output:__
 ````
 false
 ````
-10. __fill(originalArray, fillValue):__ This method assigns this fillValue to each index of this Arrays.
+10. __fill(originalArray, fillValue):__ This method assigns this fillValue to each index of the Array.
 ````
 public class A {
 	public static void main(String[] args) {
@@ -230,7 +230,7 @@ __output:__
 10
 10
 ````
-11. __hashCode(originalArray):__ This method returns an integer hashCode of this array instance.
+11. __hashCode(originalArray):__ This method returns an integer hashCode of the array instance.
 ````
 public class A {
 	public static void main(String[] args) {
