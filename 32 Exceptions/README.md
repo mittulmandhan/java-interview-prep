@@ -17,7 +17,7 @@
 ### Compile-time Exceptions/Checked Exceptions
 * A checked exception is an exception that is checked by the compiler at compile-time.
 * These are the problems which can be known at compile-time or code writing.
-* If we want to make a new compile exception then we can do so by making a new class which inherits Exception class.
+* If we want to make a new compile time exception then we can do so by making a new class which inherits Exception class.
 * Such exceptions are to be handled by the programmer at compile-time otherwise program won't compile.
 * For example:
 ````
