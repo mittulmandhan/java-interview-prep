@@ -2,7 +2,7 @@
 There is only one rule while doing overriding with Access Modifiers i.e.
 >`If you are overriding any method, overriding method(i.e. declared in subclass) must not be more restrictive than the method being overridden(i.e. declared in superclass).`
 
-## Access modifiers in restrictions decreasing order
+## Access modifiers in decreasing order of restriction
 1. private
 2. default
 3. protected
