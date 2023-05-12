@@ -15,7 +15,7 @@
   - And more.
 
 
-## Methods in Java Array
+## Methods in Java Arrays
 1. __static <T> List<T> asList(T… a):__ This method returns a fixed-size list backed by the specified Arrays.
 ````
 public class A {
