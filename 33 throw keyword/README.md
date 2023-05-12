@@ -16,9 +16,9 @@ public class A {
 		// so this line of code will compile
 		throw new NullPointerException();
 
-		// due to this line program will not compile
-		// compiler will show a message that this exception
-		// exception must be handled by try/catch or throws
+		// due to this line, program will not compile
+		// and compiler will show a message that this exception
+		// must be handled by try/catch or throws
 		throw new Exception();
 	}
 }
@@ -30,7 +30,7 @@ Exception in thread "main" java.lang.Error: Unresolved compilation problem:
 
 	at example1.A.main(A.java:12)
 ````
-* We can create a custom exception and it using throw keyword as well. This is the most common purpose of using throw keyword.
+* We can create a custom exception and throw it using throw keyword as well. This is the most common purpose of using throw keyword.
 ````
 public class A {
 	public static void main(String[] args) {
