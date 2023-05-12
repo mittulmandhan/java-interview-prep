@@ -40,10 +40,10 @@ y is zero
 public class A {
 	void ab() throws Exception {
 		// If I comment this line then output will be 'in ab()'
-		// throw new Exception();
+		throw new Exception();
   
-  // If I dont comment the above throw statement
-  // then following code will be an unreachable code
+    // If I dont comment the above throw statement
+    // then following code will be an unreachable code
 		System.out.println("in ab()");
 	}
 
