@@ -4,7 +4,7 @@
 * Usage of throws keyword ensures normal flow of the program remains intact when an error or exception occurs.
 * It informs the programmer that there may occur an error or exception. So, programmer must either throw it further using throws keyword or handle it using try/catch. This practice ensures that normal flow of the program is not hampered when an exception or error occurs.
 * It can only be used in signature of method.
-* throws keyword is followed by throwable class or its sub class.
+* throws keyword is followed by throwable class name or its sub class name.
 * Problem which forced the existance of throws:
 ````
 public class A {
