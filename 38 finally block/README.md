@@ -47,7 +47,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at example7.A.main(A.java:7)
 ````
 * Finally block can be used to put cleanup code such as closing a file, closing a connection etc.
-* If try or catch block contains a return statement, just before execution that return statement finally block is executed.
+* If try or catch block contains a return statement, just before the execution of that return statement finally block is executed.
 ````
 public class A {
 	static int ab() {
