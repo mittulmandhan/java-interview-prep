@@ -412,7 +412,7 @@ __output:__
 35
 16
 ````
-20. __static <T> void sort(T[] a, int from, int to, Comparator< super T> c):__ This method sorts the specified range of the specified array of objects according to the order induced by the specified comparator.
+20. __static <T> void sort(T[] a, int from, int to, Comparator< super T> c):__ This method sorts the specified range of the array of objects according to the order induced by the specified comparator.
 ````
 public class A {
 	public static void main(String[] args) {
