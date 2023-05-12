@@ -4,7 +4,7 @@
 * There can be only one finally block for a try block.
 * Finally cannot exist without try block.
 * Finally block can exist when there is no catch block.
-* Finally block exists it will always be executed no matter what(wether exception occur or not).
+* Finally block will always be executed no matter what(wether exception occur or not).
 * Finally block consists of a code that frees the resources.
 * Finally block can contain a try-catch i.e. called inner try-catch.
 * Syntax:
@@ -26,7 +26,7 @@ finally {
   // compulsory code
 }
 ````
-* If you don't handle exception, before terminating the program , JVM executes finally block(if any).
+* Even when you don't handle exception, JVM executes finally block(if any).
 ````
 public class A {
 	public static void main(String[] args) {
