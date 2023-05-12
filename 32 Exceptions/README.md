@@ -79,7 +79,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
 ### Errors
 * These are not actually exceptions, but problems that arise beyond the control of the user.
 * All errors fall into unchecked exception's category.
-* Errors are usually ignored in your code because you can not do anything about an error.
+* Errors are not handled like runtime exceptions in your code because you can not do anything about an error.
 * __For example:__
   - StackOverflowError.
   - If hardware crashes, we cannot remove this problem.
