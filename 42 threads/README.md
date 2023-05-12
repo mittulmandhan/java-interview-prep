@@ -17,10 +17,9 @@ class A {
   }
 }
 ````
-* In Java threading, we can create as many threads(for each thread there is one stack) as we want which can be synchronous or asynchronous.
+* In Java threading, we can create as many threads(for each thread there is one stack) as we want and they can be synchronous or asynchronous.
 * Java supports threading through stack.
-* JVM executes methods in stack.
-* If we have multiple stacks then JVM has to implement multiple methods.
+* JVM executes methods in stack.
 * JVM sets 'main' as the name of main thread i.e. started with main method.
 * You can change the name of main thread as well.
 ````
