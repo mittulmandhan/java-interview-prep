@@ -140,7 +140,7 @@ access this thread.<br>
   `public final void join() throws InterruptedException`
 24. __join(long millis):__ Waits at most millis milliseconds for this thread to die.<br>
   `public final void join(long millis) throws InterruptedException, IllegalArgumentException`
-25. __run():__ If this thread was constructed using a separate Runnable run object, then that Runnable object’s run method is called; otherwise, this method does nothing and returns.<br>
+25. __run():__ If this thread was constructed using a separate Runnable object, then that Runnable object’s run method is called; otherwise, this method does nothing and returns.<br>
   `public void run()`
 26. __yield():__ A hint to the scheduler that the current thread is willing to yield its current use of a processor. It is a static method of Thread class. It passes the thread from running state to runnable state.<br>
   `public static void yield()`
