@@ -210,7 +210,7 @@ Thread_Demo.run()
 * 2nd way is preffered almost always to create a thread.
 * start() method starts a new stack & loads run() method in it.
 * Main thread has main() method in the bottom of the its stack whereas other threads have corresponding run() method in the bottom of the stack.
-* A Thread can only be started once i.e. start() method can be used only once.
+
 ## Life Cycle of a Thread
 ![alt picture](https://github.com/mittulmandhan/java-interview-prep/blob/master/img/threads/life%20cycle%20of%20a%20thread.jpg)
 * When a thread is created with new keyword it goes in new state.
