@@ -106,7 +106,7 @@ access this thread.<br>
   `public static int enumerate(Thread[] tarray) throws SecurityException`
 7. __getAllStackTraces():__ Returns a map of stack traces for all live threads.<br>
   `public static Map getAllStackTraces() throws SecurityException`
-8. __getContextClassLoader():__ Returns the context ClassLoader for this Thread. SecurityException is thrown the current thread cannot get the context ClassLoader.<br>
+8. __getContextClassLoader():__ Returns the context ClassLoader for this Thread. SecurityException is thrown when the current thread cannot get the context ClassLoader.<br>
   `public ClassLoader getContextClassLoader() throws SecurityException`
 9. __getDefaultUncaughtExceptionHandler():__ Returns the default handler invoked when a thread abruptly terminates due to an uncaught exception.<br>
   `public static Thread.UncaughtExceptionHandler getDefaultUncaughtExceptionHandler()`
