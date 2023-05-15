@@ -2,7 +2,7 @@
 
 Concurrency                                                     | Parallelism
 --------------------------------------------------------------- | ------------------------------------------------------------------------
-Concurrency is when two tasks can start, run, and complete in overlapping time periods | Parallelism is when tasks literally run at the same time, eg. on a multi-core processor.
+Concurrency is when two tasks can start, run, and complete in overlapping time periods | Parallelism is when multiple tasks literally run at the same time, eg. on a multi-core processor.
 Concurrency is the composition of independently executing processes | Parallelism is the simultaneous execution of (possibly related) computations.
 In concurrency, processes are independent. | In Parallelism, processes may be related or independent.
 Concurrency is about dealing with lots of things at once. | Parallelism is about doing lots of things at once.
