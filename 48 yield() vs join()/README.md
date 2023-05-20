@@ -4,7 +4,7 @@
   `public static native void yield();`
 * Theoretically, to ‘yield’ means to let go, to give up, to surrender.
 * Yield is a Static method and Native too.
-* Yield tells the currently executing thread to give a chance to the threads that have equal priority in the Thread Pool.
+* Yield tells the currently executing thread to give a chance to the threads that have equal or higher priority in the Thread Pool.
 * There is no guarantee that Yield will make the currently executing thread to runnable state immediately.
 * It can only make a thread from Running State to Runnable State, not in wait or blocked state.
 ````
