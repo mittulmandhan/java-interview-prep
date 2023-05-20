@@ -46,8 +46,7 @@ Thread-0 in control
 
 ## `join()` method
 * The join() method of a Thread instance can be used to “join” the start of a thread’s execution to the end of another thread’s execution.
-* The joining thread will not start running until the thread being joined finished executing.
-* public final void join() throws InterruptedException
+* The joining thread will not start running until the thread being joined finished executing.
 * Signature:
   `public final void join() throws InterruptedException`
 * Giving a timeout within join(), will make the join() effect to be nullified after the specific timeout.
