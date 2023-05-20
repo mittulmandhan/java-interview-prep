@@ -1,7 +1,7 @@
 # `sleep()` vs `wait()`
 sleep()                                                          | wait()
 ---------------------------------------------------------------- | -----------------------------------------------------------------------
-sleep() causes the currently executing thread to sleep for specified milli seconds(millis) | wait() causes the current thread to wait until another thread invokes notify() or notifyAll() method, for this object, to notify the waiting thread.
+sleep() causes the currently executing thread to sleep for specified milli seconds(millis) | wait() causes the current thread to wait until another thread invokes notify() or notifyAll() method, on this object, to notify the waiting thread.
 sleep() method belongs to Thread class. | wait() method belongs to Object class.
 There is no need to call sleep() from synchronized context. | wait() method should be called only from the synchronized context.
 sleep() method does not releases the lock on an object during synchronization. | wait() method releases the lock on an object during synchronization.
